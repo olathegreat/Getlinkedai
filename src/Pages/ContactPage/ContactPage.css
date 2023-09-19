@@ -1,0 +1,19 @@
+:root {
+  --mainPurple: #150e28;
+  --lightPurple: #903aff;
+  --lailacPurple: #d434fe;
+  /* fonts and typography */
+  /* --biggestFontSize: 2.5rem;
+  --h1FontSize: 1.5rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: .938rem;
+  --smallFontSize: .813rem;
+  --smallestFontSize: .75rem; */
+}
+
+.contact-page {
+  background-color: var(--mainPurple);
+  width: 100%;
+  height: 100vh;
+}/*# sourceMappingURL=ContactPage.css.map */

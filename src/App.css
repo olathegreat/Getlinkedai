@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Work Sans', sans-serif; */
+@font-face {
+  font-family: 'ClashDisplayBold'; 
+  src: url("/public/classDisplayFont/OTF/ClashDisplay-Bold.otf"); 
+}
+
+@font-face {
+  font-family: 'ClashDisplaySemiBold'; 
+  src: url("/public/classDisplayFont/OTF/ClashDisplay-Semibold.otf"); 
+}
+
+*{
+  padding:0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  transition: .3s ease;
+}
+
+
+/* colors and styles default */
+:root{
+ 
+
+  --mainPurple: #150e28;
+  --lightPurple: #903aff;
+  --lailacPurple: #d434fe;
+
+
+
+
+  /* fonts and typography */
+
+  /* --biggestFontSize: 2.5rem;
+  --h1FontSize: 1.5rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: .938rem;
+  --smallFontSize: .813rem;
+  --smallestFontSize: .75rem; */
+
+}
+
+/* default styles */
+html{
+  font-size:90%;
+}
+
+
+
+a{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+
+
+
+
+
