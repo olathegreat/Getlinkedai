@@ -1,23 +1,29 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation , useNavigate} from "react-router-dom";
 import "./Nav.css";
 
 const Nav = () => {
   const [navToggle, setNavToggle] = useState(false);
+  const location = useLocation().pathname;
+  console.log(location);
+  const navigate = useNavigate();
 
   const navToggleFunction = () => {
     setNavToggle(!navToggle);
   };
   return (
     <nav>
+     
+
+        
       <div className="nav">
         <div className="large-screen-left">
           <img src="/images/getlinked.png" alt="logo" />
         </div>
         <div className="mobile-left">
-          <img src="/images/getlinked.png" alt="logo" />
+          <img src="/images/getlinked.png" alt="logo" style={{display:location==="/" ? "block" : "none"}} />
 
-          <div className="nav-control">
+          <div className="nav-control" style={{display:location==="/" ? "block" : "none"}}>
             <img
               style={{ display: !navToggle ? "block" : "none" }}
               onClick={navToggleFunction}
@@ -31,9 +37,17 @@ const Nav = () => {
               alt="cancel-icon"
             />
           </div>
+
+          <img src="/images/back.png" style={{display:location==="/contact" ? "block" : "none"}}  alt="back-icon" onClick={()=>navigate(-1)}/>
+
+          <h3 className="register-header" style={{display:location==="/register" ? "block" : "none"}} >Register</h3>
         </div>
 
-        <div className="right">
+
+       
+
+        <div   className={`right ${location=== "/contact" && "no-small-display"}`}>
+          
           <ul>
             <li>
               <Link to="">Timeline</Link>
@@ -54,7 +68,10 @@ const Nav = () => {
           </button>
         </div>
       </div>
+        
     </nav>
+
+
   );
 };
 

@@ -5,11 +5,17 @@
     --lailacPurple: #d434fe;
   
   }
+
+  @font-face {
+    font-family: 'ClashDisplaySemiBold'; 
+    src: url("/public/classDisplayFont/OTF/ClashDisplay-Semibold.otf"); 
+  }
+  
 .nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 30px 128px;
+  
  
 
     .mobile-left{
@@ -48,7 +54,7 @@
 
 @media (min-width: 769px) and (max-width: 1150px) {
     .nav{
-        padding: 30px 50px; ;
+       
         .right{
             column-gap: 30px;
             ul{
@@ -65,9 +71,13 @@
     .nav{
         flex-direction: column;
         width: 100%;
-        padding: 30px 45px;
+       
         row-gap: 63px;
         align-items: flex-start;
+
+        .no-small-display{
+            display: none;
+        }
       
         .large-screen-left{
             display: none;
@@ -83,6 +93,11 @@
                     cursor: pointer;
                 }
               
+            }
+            .register-header{
+                color: var(--lailacPurple);
+                font-family: ClashDisplaySemiBold;
+                letter-spacing: 3px;
             }
           
         }

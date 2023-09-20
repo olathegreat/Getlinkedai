@@ -4,11 +4,14 @@
   --lailacPurple: #d434fe;
 }
 
+@font-face {
+  font-family: "ClashDisplaySemiBold";
+  src: url("/public/classDisplayFont/OTF/ClashDisplay-Semibold.otf");
+}
 .nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 30px 128px;
 }
 .nav .mobile-left {
   display: none;
@@ -46,9 +49,6 @@
 }
 
 @media (min-width: 769px) and (max-width: 1150px) {
-  .nav {
-    padding: 30px 50px;
-  }
   .nav .right {
     -moz-column-gap: 30px;
          column-gap: 30px;
@@ -62,9 +62,11 @@
   .nav {
     flex-direction: column;
     width: 100%;
-    padding: 30px 45px;
     row-gap: 63px;
     align-items: flex-start;
+  }
+  .nav .no-small-display {
+    display: none;
   }
   .nav .large-screen-left {
     display: none;
@@ -77,6 +79,11 @@
   }
   .nav .mobile-left .nav-control img {
     cursor: pointer;
+  }
+  .nav .mobile-left .register-header {
+    color: var(--lailacPurple);
+    font-family: ClashDisplaySemiBold;
+    letter-spacing: 3px;
   }
   .nav .right {
     flex-direction: column;

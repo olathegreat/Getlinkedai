@@ -1,19 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
 :root {
   --mainPurple: #150e28;
   --lightPurple: #903aff;
   --lailacPurple: #d434fe;
-  /* fonts and typography */
-  /* --biggestFontSize: 2.5rem;
-  --h1FontSize: 1.5rem;
-  --h2FontSize: 1.25rem;
-  --h3FontSize: 1rem;
-  --normalFontSize: .938rem;
-  --smallFontSize: .813rem;
-  --smallestFontSize: .75rem; */
 }
 
+@font-face {
+  font-family: "ClashDisplayBold";
+  src: url("/public/classDisplayFont/OTF/ClashDisplay-Bold.otf");
+}
+@font-face {
+  font-family: "ClashDisplaySemiBold";
+  src: url("/public/classDisplayFont/OTF/ClashDisplay-Semibold.otf");
+}
+@font-face {
+  font-family: "ClashDisplayregular";
+  src: url("/public/classDisplayFont/OTF/ClashDisplay-Regular.otf");
+}
 .contact-page {
   background-color: var(--mainPurple);
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
+  padding: 30px 128px;
+}
+.contact-page main {
+  display: flex;
+  width: inherit;
+  margin-top: 41px !important;
+  justify-content: space-between;
+  color: white;
+  margin-top: 140px;
+  align-items: center;
+}
+.contact-page main h3,
+.contact-page main h5,
+.contact-page main h4 {
+  color: var(--lailacPurple);
+  font-family: ClashDisplayregular;
+}
+.contact-page main .mobile-sm-link {
+  display: none;
+}
+.contact-page main .left {
+  display: flex;
+  flex-direction: column;
+  row-gap: 17px;
+}
+.contact-page main .left h3 {
+  font-size: 32px;
+}
+.contact-page main .left p {
+  font-size: 16px;
+}
+.contact-page main .left h5 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  margin-top: 40px;
+}
+.contact-page main .left .social-media {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.contact-page main .right form {
+  width: 687px;
+  height: 611px;
+  padding: 75px 92px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  row-gap: 35px;
+}
+.contact-page main .right form .mobile-only {
+  display: none;
+}
+.contact-page main .right form input,
+.contact-page main .right form textarea {
+  outline: none;
+  padding: 10px 29px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 1px solid white;
+}
+.contact-page main .right form h4 {
+  font-size: 20px;
+  line-height: 27px;
+}
+.contact-page main .right form input {
+  height: 47px;
+}
+.contact-page main .right form textarea {
+  height: 119px;
+}
+.contact-page main .right form .button-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-page main .right form .button-wrapper button {
+  width: 172px;
+  height: 53px;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  background: linear-gradient(to right, var(--lailacPurple), var(--lightPurple));
+}
+
+@media (min-width: 769px) and (max-width: 1150px) {
+  .contact-page {
+    padding: 30px 50px;
+  }
+  .contact-page main {
+    gap: 20px;
+  }
+  .contact-page main .right form {
+    padding: 45px 42px;
+    width: 487px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contact-page {
+    padding: 30px 45px;
+    position: relative;
+  }
+  .contact-page main {
+    flex-direction: column;
+    width: inherit;
+  }
+  .contact-page main .mobile-sm-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    row-gap: 10px;
+  }
+  .contact-page main .mobile-sm-link .social-media {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .contact-page main .left {
+    display: none;
+  }
+  .contact-page main .right {
+    width: inherit;
+  }
+  .contact-page main .right form {
+    width: inherit;
+    height: auto;
+    padding: 0;
+    background: none;
+  }
+  .contact-page main .right form input, .contact-page main .right form textarea {
+    background: rgba(255, 255, 255, 0.02);
+  }
+  .contact-page main .right form .mobile-only {
+    display: block;
+  }
 }/*# sourceMappingURL=ContactPage.css.map */
