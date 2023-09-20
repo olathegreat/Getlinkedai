@@ -29,7 +29,7 @@
   main {
     display: flex;
     width: inherit;
-    margin-top: 41px !important;
+    margin-top: 140px;
     justify-content: space-between;
     color: white;
     margin-top: 140px;
@@ -71,7 +71,7 @@
         height: 611px;
         padding: 75px 92px;
         border-radius: 12px;
-        background: rgba(255, 255, 255, 0.2);
+        background: rgba(255, 255, 255, 0.05);
         display: flex;
         flex-direction: column;
         row-gap: 35px;
@@ -85,9 +85,12 @@
           outline: none;
           padding: 10px 29px;
           border-radius: 4px;
-          background: rgba(255, 255, 255, 0.2);
+          background: rgba(255, 255, 255, 0.05);
           color: white;
           border: 1px solid white;
+        }
+        input::placeholder, textarea::placeholder{
+            color: white;
         }
         h4 {
           font-size: 20px;
@@ -95,6 +98,7 @@
         }
         input {
           height: 47px;
+          color: white;
         }
         textarea {
           height: 119px;
@@ -128,6 +132,7 @@
     padding: 30px 50px;
     main {
       gap: 20px;
+      
 
       .right {
         form {
@@ -147,6 +152,7 @@
     main {
       flex-direction: column;
       width: inherit;
+      margin-top: 41px !important;
 
 
        .mobile-sm-link{

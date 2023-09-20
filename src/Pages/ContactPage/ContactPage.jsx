@@ -1,14 +1,72 @@
 import React, { useState } from "react";
 import Nav from "../../components/Nav/Nav";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import {Oval} from 'react-loader-spinner';
+
+import { toast } from 'react-toastify';
 import "./ContactPage.css";
+import axios from "../../api/axios";
+
+const url = "/hackathon/contact-form"
 
 const ContactPage = () => {
   const [formDetails, setFormDetails] = useState({});
+  const [error, setError] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+
+  const formSubmit = async (e) =>{
+    e.preventDefault();
+
+    if(formDetails.email !==""   && formDetails.first_name !=="" && formDetails.message !==""){
+        setIsLoading(true);
+
+        try{
+
+            const response = await axios.post(url, formDetails,{
+                Headers:{
+                    "Content-Type" : "application/json"
+                }
+            })
+            console.log(response);
+            toast.success('successfully sent!', {
+                position: "top-right", 
+                autoClose: 5000,    
+                hideProgressBar: false, 
+                closeOnClick: true,    
+                pauseOnHover: true,   
+                draggable: true,  
+              })
+              setFormDetails({...formDetails, email: "", first_name:"", message:"" });
+              setIsLoading(false);
+
+        }catch(err){
+            
+            toast.error(err.message, {
+                position: "top-right", 
+                autoClose: 3000,    
+                hideProgressBar: false, 
+                closeOnClick: true,    
+                pauseOnHover: true,   
+                draggable: true,  
+              })
+              setError(err.mesage);
+            setIsLoading(false);
+
+        }
+       
+    }else{
+        setError("You need to fill all fields");
+        console.log(formDetails);
+    }
+  }
+ 
   return (
     <div className="contact-page">
       <Nav />
 
       <main>
+        <ToastContainer/>
         <div className="left">
           <h3>Get in touch</h3>
 
@@ -43,7 +101,7 @@ const ContactPage = () => {
         </div>
 
         <div className="right">
-          <form>
+          <form onSubmit={formSubmit}>
             <h4>
               Questions or need assistance?<br></br>
               Let us know about it!
@@ -78,9 +136,27 @@ const ContactPage = () => {
               value={formDetails.message}
             />
 
+            <p>{error}</p>
+
             <div className="button-wrapper">
-              <button type="submit">Submit</button>
+                {
+                    isLoading ? <Oval
+                    height={80}
+                    width={80}
+                    color="rgba(255, 255,255, .8)"
+                    wrapperStyle={{}}
+                    wrapperClass=""
+                    visible={true}
+                    ariaLabel='oval-loading'
+                    secondaryColor="rgba(255, 255,255, .3)"
+                    strokeWidth={2}
+                    strokeWidthSecondary={2}
+                  
+                  /> :   <button type="submit">Submit</button>
+                }
+            
             </div>
+
           </form>
         </div>
 
