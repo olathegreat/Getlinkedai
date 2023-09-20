@@ -136,7 +136,7 @@ const ContactPage = () => {
               value={formDetails.message}
             />
 
-            <p>{error}</p>
+            {/* <p>{error}</p> */}
 
             <div className="button-wrapper">
                 {
@@ -171,6 +171,14 @@ const ContactPage = () => {
           </div>
         </div>
       </main>
+
+      <img src="/images/lensflarepurple.png" alt="lensflare" className="firstlensflare"/>
+      <img src="/images/lensflarepurple.png" alt="lensflare" className="secondlensflare"/>
+      <img src="/images/lailacstar.png" alt="star" className="lailacstar"/>
+      <img src="/images/lightpurplestar.png" alt="lensflare" className="lightpurplestar"/>
+      <img src="/images/outlinestar.png" alt="lensflare" className="outlinestar"/>
+      <img src="/images/greystar.png" alt="lensflare" className="greystar"/>
+      <img src="/images/whitestar.png" alt="lensflare" className="whitestar"/>
     </div>
   );
 };

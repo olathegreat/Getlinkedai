@@ -29,19 +29,6 @@ font-family: 'Work Sans', sans-serif; */
   --lightPurple: #903aff;
   --lailacPurple: #d434fe;
 
-
-
-
-  /* fonts and typography */
-
-  /* --biggestFontSize: 2.5rem;
-  --h1FontSize: 1.5rem;
-  --h2FontSize: 1.25rem;
-  --h3FontSize: 1rem;
-  --normalFontSize: .938rem;
-  --smallFontSize: .813rem;
-  --smallestFontSize: .75rem; */
-
 }
 
 /* default styles */
@@ -58,6 +45,95 @@ li{
   list-style: none;
 }
 
+.firstlensflare,.smalllensflare, .secondlensflare, .lailacstar, .lightpurplestar, .outlinestar, .greystar, .whitestar{
+  position: absolute;
+}
+
+.firstlensflare{
+  top: 0;
+  left: 0;
+  opacity: .6;
+}
+.smalllensflare{
+  display: none;
+}
+
+.secondlensflare{
+  right: 0;
+  transform: scaleX(-1);
+  top: 332px;
+  opacity: .6;
+}
+.lailacstar{
+  top: 251px;
+  left: 20%;
+}
+.greystar{
+  top: 167px;
+  right: 10%;
+}
+.outlinestar{
+  top: 462px;
+  left: 35%;
+}
+.lightpurplestar{
+  top: 698px;
+  left: 45%;
+  z-index: 99;
+}
+.whitestar{
+  top: 750px;
+  right: 5%;
+
+}
+
+@media screen and (max-width: 768px) {
+  .secondlensflare{
+    display: none;
+  }
+  .firstlensflare{
+   
+    width: inherit;
+    height: auto;
+  }
+  .smalllensflare{
+    display: block;
+    top: 0px;
+    left: 0;
+    width: 320px;
+    height: 320px;
+    
+  }
+  .lailacstar{
+    top: 61px;
+    left: 60%;
+    width: 10px;
+    height: 10px;
+  }
+  .greystar{
+    top: 120px;
+    right: 10%;
+    width: 20px;
+    height: 20px;
+  }
+  .lightpurplestar{
+    top: 600px;
+    left: 3%;
+    width: 20px;
+    height: 20px;
+    z-index: 99;
+  }
+  .whitestar{
+    top: 500px;
+    right: 5%;
+    width: 20px;
+    height: 20px;
+  
+  }
+  .outlinestar{
+    display: none;
+  }
+}
 
 
 

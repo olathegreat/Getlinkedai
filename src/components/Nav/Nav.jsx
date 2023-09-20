@@ -17,10 +17,10 @@ const Nav = () => {
         
       <div className="nav">
         <div className="large-screen-left">
-          <img src="/images/getlinked.png" onClick={()=>navigate("/")} alt="logo" />
+          <img style={{cursor:"pointer"}} src="/images/getlinked.png" onClick={()=>navigate("/")} alt="logo" />
         </div>
         <div className="mobile-left">
-          <img src="/images/getlinked.png" onClick={()=>navigate("/")} alt="logo" style={{display:location==="/" ? "block" : "none"}} />
+          <img src="/images/getlinked.png" onClick={()=>navigate("/")} alt="logo" style={{display:location==="/" ? "block" : "none", cursor:"pointer"}} />
 
           <div className="nav-control" style={{display:location==="/" ? "block" : "none"}}>
             <img
@@ -58,7 +58,7 @@ const Nav = () => {
               <Link to="">FAQs</Link>
             </li>
             <li>
-              <Link to="">Contact</Link>
+              <Link to="" className={`${location=== "/contact" && "gradient-text"}`}>Contact</Link>
             </li>
           </ul>
 

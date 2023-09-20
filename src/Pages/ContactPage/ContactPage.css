@@ -20,8 +20,9 @@
 .contact-page {
   background-color: var(--mainPurple);
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   padding: 30px 128px;
+  position: relative;
 }
 .contact-page main {
   display: flex;
@@ -70,7 +71,7 @@
   background: rgba(255, 255, 255, 0.05);
   display: flex;
   flex-direction: column;
-  row-gap: 35px;
+  row-gap: 25px;
 }
 .contact-page main .right form .mobile-only {
   display: none;
@@ -78,7 +79,7 @@
 .contact-page main .right form input,
 .contact-page main .right form textarea {
   outline: none;
-  padding: 10px 29px;
+  padding: 10px 24px;
   border-radius: 4px;
   background: rgba(255, 255, 255, 0.05);
   color: white;
@@ -119,6 +120,7 @@
 @media (min-width: 769px) and (max-width: 1150px) {
   .contact-page {
     padding: 30px 50px;
+    overflow-y: scroll;
   }
   .contact-page main {
     gap: 20px;
@@ -131,6 +133,7 @@
 @media screen and (max-width: 768px) {
   .contact-page {
     padding: 30px 45px;
+    height: 100vh !important;
     position: relative;
   }
   .contact-page main {

@@ -33,6 +33,13 @@
                 a{
                     color: white;
                 }
+                .gradient-text {
+                    background: linear-gradient(to right, var(--lailacPurple), var(--lightPurple)); 
+                    -webkit-background-clip: text; 
+                    background-clip: text; 
+                    color: transparent; 
+                    
+                  }
             }
         }
         button{
@@ -50,6 +57,7 @@
              }
         }
     }
+   
 }
 
 @media (min-width: 769px) and (max-width: 1150px) {

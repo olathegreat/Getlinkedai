@@ -33,6 +33,12 @@
 .nav .right ul li a {
   color: white;
 }
+.nav .right ul li .gradient-text {
+  background: linear-gradient(to right, var(--lailacPurple), var(--lightPurple));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
 .nav .right button {
   width: 172px;
   height: 53px;
