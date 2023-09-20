@@ -58,11 +58,11 @@ const Nav = () => {
               <Link to="">FAQs</Link>
             </li>
             <li>
-              <Link to="" className={`${location=== "/contact" && "gradient-text"}`}>Contact</Link>
+              <Link to="/contact" className={`${location=== "/contact" && "gradient-text"}`}>Contact</Link>
             </li>
           </ul>
 
-          <button className="register-button">
+          <button className={`${location=== "/register" ? "register-button-border" : "register-button"}`}>
             <Link to="/register">Register</Link>
           </button>
         </div>

@@ -1,0 +1,13 @@
+:root {
+  --mainPurple: #150e28;
+  --lightPurple: #903aff;
+  --lailacPurple: #d434fe;
+}
+
+.register-page {
+  background-color: var(--mainPurple);
+  width: 100%;
+  min-height: 100vh;
+  padding: 30px 128px;
+  position: relative;
+}/*# sourceMappingURL=RegisterPage.css.map */

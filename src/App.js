@@ -1,22 +1,19 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import './App.css';
 import ContactPage from './Pages/ContactPage/ContactPage';
+import RegisterPage from './Pages/RegisterPage/RegisterPage';
+import './App.css';
+
 
 
 
 const App = () => {
 
   return (
-    // <div className="container">
-    //  Hello
-
-      
-
-      
-    // </div>
+   
     <Routes>
       <Route path='/contact' element={<ContactPage/>}/>
+      <Route path='/register' element={<RegisterPage/>}/>
     </Routes>
   );
 }

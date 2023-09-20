@@ -53,6 +53,13 @@
 .nav .right button a {
   color: white;
 }
+.nav .right .register-button-border {
+  border: 2px solid transparent;
+  border-image: linear-gradient(45deg, var(--lailacPurple) , var(--lightPurple));
+  border-image-slice: 1;
+  background: transparent;
+  border-radius: 10px;
+}
 
 @media (min-width: 769px) and (max-width: 1150px) {
   .nav .right {

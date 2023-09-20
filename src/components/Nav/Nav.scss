@@ -56,6 +56,27 @@
                 color: white;
              }
         }
+        .register-button-border{
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            background: none; 
+            color: #fff; 
+            border-width: 3px; 
+            border-image: linear-gradient(to top, var(--lailacPurple),var(--lightPurple)); /* Gradient border colors */
+            border-image-slice: 1; 
+            border-image-width: 3; 
+            border-image-outset: 0; 
+            border-image-repeat: stretch; 
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s, border-image 0.3s;
+        }
+
+
+
+
+       
     }
    
 }
