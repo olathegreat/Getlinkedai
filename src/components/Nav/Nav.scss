@@ -15,6 +15,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 999;
   
  
 
@@ -49,12 +50,14 @@
             align-items: center;
             justify-content: center;
             border: none;
+            cursor: pointer;
             border-radius: 4px;
             color: white;
             background: linear-gradient(to right,var(--lailacPurple), var(--lightPurple));
              a{
                 color: white;
              }
+
         }
         .register-button-border{
             display: inline-block;
@@ -71,6 +74,7 @@
             cursor: pointer;
             text-decoration: none;
             transition: background-color 0.3s, border-image 0.3s;
+            
         }
 
 

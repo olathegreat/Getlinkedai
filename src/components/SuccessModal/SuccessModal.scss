@@ -29,6 +29,10 @@
         text-align: center;
         display: flex;
         align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
         span{
             img{
                 margin-left: 5px;
@@ -49,7 +53,7 @@
                 border-radius: 4px;
     }
 
-    .successgreystar, .successlailacstar{
+    .successgreystar, .successlailacstar,.successlightpurplestar{
         position: absolute;
     }
     .successlailacstar{
@@ -61,5 +65,30 @@
            left: 50px;
            top: 50%;
     }
+    .successlightpurplestar{
+        right: -20px;
+        top: -20px;
+        width: 20px;
+        height: auto;
+    }
 
+}
+
+@media screen and (max-width: 768px) {
+
+    .success-modal{
+        padding: 28px 35px;
+        height: fit-content;
+        
+        .congratulations{
+            width: 80%;
+            height: auto;
+        }
+
+        .successgreystar, .successlailacstar,.successlightpurplestar{
+            width: 20px;
+            height: auto;
+        }
+    }
+    
 }

@@ -25,7 +25,11 @@
   min-height: 982px;
   padding: 30px 128px;
   position: relative;
-
+  overflow-x: hidden;
+  
+  .registerlailacstar{
+    z-index: -1;
+  }
   .modal{
     position: absolute;
     top: 0;
@@ -35,6 +39,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 999;
 
     background-color: #150e28e6;
   }
@@ -48,16 +53,21 @@
     // z-index: 999;
     .left{
         flex: 1;
+        width: 45%;
         img{
-            width: inherit;
+            width: 100%;
             height: auto;
            
         }
     }
     .right{
         flex: 1;
+        width: 45%;
+       
        
         form{
+            width: 100%;
+            
             padding: 50px 60px;
             border-radius: 12px;
             background-color: rgba(255, 255, 255, .1);
@@ -88,19 +98,23 @@
 
             .form-row{
                 display: flex;
+                width: inherit;
+               
                 gap: 32px;
 
                 .form-group{
                     display: flex;
                     flex-direction: column;
+                    flex: 1;
                     gap: 11px;
 
                     label{
                         font-size: 14px;
                     }
                     input,select{
-                        padding: 15px 26px;
+                        padding: 15px 10px;
                         flex: 1;
+                        width: 100%;
                         // width: 263px;
                         height: 47px;
                         border: 1px solid white;
@@ -158,17 +172,60 @@
     }
   }
   }
+  @media (min-width: 769px) and (max-width: 1150px) {
+    .register-page{
+        padding: 30px 50px;
+        main{
+            gap: 60px;
+            .left{
+                flex: none;
+                width: 35%;
+                justify-content: center;
+                display: flex;
+                img{
+                    width: 291px;
+                    height: auto;
+                }
 
-  @media screen and (max-width: 450px) {
+            }
+
+            .right{
+                width: 55%;
+                form{
+                    padding: 45px 42px;
+                    gap: 15px;
+                }
+                
+            }
+        }
+    }
+  }
+ 
+
+  @media screen and (max-width: 768px) {
 
     .register-page{
-        padding: 24px 64px;
+        padding: 30px 45px;
+
+        .modal{
+            padding-left:36px;
+            padding-right: 36px;
+        }
+
+
 
         main{
 
             flex-direction: column;
+            gap: 20px;
+
+            .left{
+                width: 100%;
+                height: auto;
+            }
 
             .right{
+                width: 100%;
                 form{
                     padding: 0;
                     border-radius: 12px;
@@ -177,15 +234,54 @@
                     flex-direction: column;
                     gap: 18px;
                     color: white;
+                    h3{
+                        display: none;
+                    }
+                    .header{
+                        .uppertext{
+                            display: flex;
+                            align-items: center;
+                            span{
+                                font-size: 12px;
+                                margin-top: 15px;
+                                text-wrap: nowrap;
+                            }
+                            img{
+                                width: 90px;
+                                height: auto;
+                            }
+                        }
+                    }
 
                     .form-row{
                         flex-direction: column;
                         gap: 18px;
+                        
                     }
+                    .select-group{
+                        
+                            flex-direction: row;
+                          
+                            gap: 10px;
+                            width: inherit;
+
+                            .form-group{
+                                flex: 1;
+                                
+                                select{
+                                    width: 100%;
+                                }
+                            }
+                    
+                    }
+
+                    
 
                     button{
                         width: 172px;
                         height: 53;
+                        margin-left: auto;
+                        margin-right: auto;
                     }
 
                 }

@@ -12,6 +12,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 999;
 }
 .nav .mobile-left {
   display: none;
@@ -46,6 +47,7 @@
   align-items: center;
   justify-content: center;
   border: none;
+  cursor: pointer;
   border-radius: 4px;
   color: white;
   background: linear-gradient(to right, var(--lailacPurple), var(--lightPurple));
@@ -54,11 +56,22 @@
   color: white;
 }
 .nav .right .register-button-border {
-  border: 2px solid transparent;
-  border-image: linear-gradient(45deg, var(--lailacPurple) , var(--lightPurple));
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  background: none;
+  color: #fff;
+  border-width: 3px;
+  -o-border-image: linear-gradient(to top, var(--lailacPurple), var(--lightPurple));
+     border-image: linear-gradient(to top, var(--lailacPurple), var(--lightPurple)); /* Gradient border colors */
   border-image-slice: 1;
-  background: transparent;
-  border-radius: 10px;
+  border-image-width: 3;
+  border-image-outset: 0;
+  border-image-repeat: stretch;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s, border-image 0.3s;
+  transition: background-color 0.3s, border-image 0.3s, -o-border-image 0.3s;
 }
 
 @media (min-width: 769px) and (max-width: 1150px) {

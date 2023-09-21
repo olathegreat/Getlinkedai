@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+:root {
+  --mainPurple: #150e28;
+  --lightPurple: #903aff;
+  --lailacPurple: #d434fe;
+}
+
+@font-face {
+  font-family: "ClashDisplayBold";
+  src: url("/public/classDisplayFont/OTF/ClashDisplay-Bold.otf");
+}
+@font-face {
+  font-family: "ClashDisplaySemiBold";
+  src: url("/public/classDisplayFont/OTF/ClashDisplay-Semibold.otf");
+}
+@font-face {
+  font-family: "ClashDisplayregular";
+  src: url("/public/classDisplayFont/OTF/ClashDisplay-Regular.otf");
+}
+.home-page {
+  background-color: var(--mainPurple);
+  width: 100%;
+  min-height: 982px;
+  padding: 30px 128px;
+  position: relative;
+  overflow-x: hidden;
+}/*# sourceMappingURL=HomePage.css.map */

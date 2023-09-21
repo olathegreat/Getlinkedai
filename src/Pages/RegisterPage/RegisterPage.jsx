@@ -8,7 +8,7 @@ import axios from "../../api/axios";
 const url = "/hackathon/registration"
 const RegisterPage = () => {
   const [teamInfo, setTeamInfo] = useState({});
-  const [modalToggle, setModalToggle] = useState(false);
+  const [modalToggle, setModalToggle] = useState(true);
 
   const formSubmit = async (e) =>{
     e.preventDefault();
@@ -32,8 +32,9 @@ const RegisterPage = () => {
             }
         })
         console.log(response);
-        setModalToggle(true);
         setTeamInfo({});
+        setModalToggle(true);
+       
 
     }catch(err){
         console.log(err);
@@ -41,7 +42,7 @@ const RegisterPage = () => {
 }
   }
   return (
-    <div className="register-page">
+    <div className="register-page" style={{ height:modalToggle && "100vh",overflowY: modalToggle && "hidden"}}>
       <Nav />
 
       <main>
@@ -120,10 +121,11 @@ const RegisterPage = () => {
               </div>
             </div>
 
-            <div className="form-row">
+            <div className="form-row select-group">
               <div className="form-group">
                 <label>Category</label>
                 <select
+                
                   onChange={(e) =>
                     setTeamInfo({ ...teamInfo, category: e.target.value })
                   }
@@ -181,9 +183,9 @@ const RegisterPage = () => {
         <SuccessModal changeToggle={() => setModalToggle(false)} />
       </div>
 
-      {/* <img src="/images/lensflarepurple.png" alt="lensflare" className="firstlensflare"/>
-      <img src="/images/lensflarepurple.png" alt="lensflare" className="secondlensflare"/> */}
-      <img src="/images/lailacstar.png" alt="star" className="lailacstar" />
+       <img src="/images/lensflarepurple.png" alt="lensflare" className="firstlensflare"/>
+      <img src="/images/lensflarepurple.png" alt="lensflare" className="secondlensflare"/> 
+      <img src="/images/lailacstar.png" alt="star" className=" registerlailacstar lailacstar" />
       <img
         src="/images/lightpurplestar.png"
         alt="lensflare"
