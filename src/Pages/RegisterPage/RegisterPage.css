@@ -4,10 +4,159 @@
   --lailacPurple: #d434fe;
 }
 
+@font-face {
+  font-family: "ClashDisplayBold";
+  src: url("/public/classDisplayFont/OTF/ClashDisplay-Bold.otf");
+}
+@font-face {
+  font-family: "ClashDisplaySemiBold";
+  src: url("/public/classDisplayFont/OTF/ClashDisplay-Semibold.otf");
+}
+@font-face {
+  font-family: "ClashDisplayregular";
+  src: url("/public/classDisplayFont/OTF/ClashDisplay-Regular.otf");
+}
 .register-page {
   background-color: var(--mainPurple);
   width: 100%;
-  min-height: 100vh;
+  min-height: 982px;
   padding: 30px 128px;
   position: relative;
+}
+.register-page .modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(21, 14, 40, 0.9019607843);
+}
+.register-page main {
+  display: flex;
+  margin-top: 68px;
+  align-items: center;
+  gap: 100px;
+}
+.register-page main .left {
+  flex: 1;
+}
+.register-page main .left img {
+  width: inherit;
+  height: auto;
+}
+.register-page main .right {
+  flex: 1;
+}
+.register-page main .right form {
+  padding: 50px 60px;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 29px;
+  color: white;
+}
+.register-page main .right form h3 {
+  font-family: ClashDisplayRegular;
+  font-size: 32px;
+  color: var(--lailacPurple);
+}
+.register-page main .right form .header {
+  display: flex;
+  flex-direction: column;
+  row-gap: 9px;
+}
+.register-page main .right form .header h2 {
+  color: white;
+  font-weight: 300;
+}
+.register-page main .right form .form-row {
+  display: flex;
+  gap: 32px;
+}
+.register-page main .right form .form-row .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+.register-page main .right form .form-row .form-group label {
+  font-size: 14px;
+}
+.register-page main .right form .form-row .form-group input, .register-page main .right form .form-row .form-group select {
+  padding: 15px 26px;
+  flex: 1;
+  height: 47px;
+  border: 1px solid white;
+  font-size: 14px;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.1);
+  outline: none;
+}
+.register-page main .right form .form-row .form-group input ::-moz-placeholder, .register-page main .right form .form-row .form-group select ::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.25);
+}
+.register-page main .right form .form-row .form-group input ::placeholder, .register-page main .right form .form-row .form-group select ::placeholder {
+  color: rgba(255, 255, 255, 0.25);
+}
+.register-page main .right form .form-row .form-group select {
+  padding-right: 26px;
+}
+.register-page main .right form .form-row .form-group select ::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.25);
+}
+.register-page main .right form .form-row .form-group select ::placeholder {
+  color: rgba(255, 255, 255, 0.25);
+}
+.register-page main .right form p {
+  color: #ff26b9;
+  font-style: italic;
+  font-size: 12px;
+}
+.register-page main .right form .checker-row {
+  display: flex;
+  gap: 10px;
+}
+.register-page main .right form .checker-row p {
+  color: white;
+  font-style: normal;
+}
+.register-page main .right form button {
+  height: 53px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(to right, var(--lailacPurple), var(--lightPurple));
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 450px) {
+  .register-page {
+    padding: 24px 64px;
+  }
+  .register-page main {
+    flex-direction: column;
+  }
+  .register-page main .right form {
+    padding: 0;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    color: white;
+  }
+  .register-page main .right form .form-row {
+    flex-direction: column;
+    gap: 18px;
+  }
+  .register-page main .right form button {
+    width: 172px;
+    height: 53;
+  }
 }/*# sourceMappingURL=RegisterPage.css.map */

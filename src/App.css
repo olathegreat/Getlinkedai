@@ -53,6 +53,7 @@ li{
   top: 0;
   left: 0;
   opacity: .6;
+  z-index: 1;
 }
 .smalllensflare{
   display: none;
@@ -63,6 +64,7 @@ li{
   transform: scaleX(-1);
   top: 332px;
   opacity: .6;
+  z-index: 1;
 }
 .lailacstar{
   top: 251px;

@@ -45,7 +45,7 @@ const Nav = () => {
 
        
 
-        <div   className={`right ${location=== "/contact" && "no-small-display"}`}>
+        <div   className={`right ${location=== "/contact" && "no-small-display"} ${location=== "/register" && "no-small-display"}`}>
           
           <ul>
             <li>

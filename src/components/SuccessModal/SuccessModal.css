@@ -1,3 +1,58 @@
+:root {
+  --mainPurple: #150e28;
+  --lightPurple: #903aff;
+  --lailacPurple: #d434fe;
+}
+
 .success-modal {
   color: white;
+  width: 519px;
+  height: 564px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 5px;
+  border: 1px solid var(--lailacPurple);
+  gap: 10px;
+}
+.success-modal h3 {
+  text-align: center;
+}
+.success-modal .group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.success-modal p {
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.success-modal p span img {
+  margin-left: 5px;
+}
+.success-modal button {
+  height: 53px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  width: 80%;
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(to right, var(--lailacPurple), var(--lightPurple));
+  border-radius: 4px;
+}
+.success-modal .successgreystar, .success-modal .successlailacstar {
+  position: absolute;
+}
+.success-modal .successlailacstar {
+  right: 20px;
+  bottom: 20px;
+}
+.success-modal .successgreystar {
+  left: 50px;
+  top: 50%;
 }/*# sourceMappingURL=SuccessModal.css.map */
