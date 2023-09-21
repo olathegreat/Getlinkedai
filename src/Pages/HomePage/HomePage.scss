@@ -3,7 +3,7 @@
     --lightPurple: #903aff;
     --lailacPurple: #d434fe;
   }
-  @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,700;1,900&family=Unica+One&display=swap');
   
   @font-face {
     font-family: "ClashDisplayBold";
@@ -23,11 +23,259 @@
     background-color: var(--mainPurple);
     width: 100%;
     min-height: 982px;
-    padding: 30px 128px;
+    
     position: relative;
     overflow-x: hidden;
+   
+    .lailac{
+        color: var(--lailacPurple)
+    }
+    .lightpurple{
+        color: var(--lightPurple);
+    }
+
+    .navdiv{
+        padding: 30px 128px;
+    }
+
+    main{
+
+        .hero{
+            padding: 30px 128px;
+            border-top: 1px solid grey;
+            border-bottom: 1px solid grey;
+            padding-bottom: 0;
+            padding-right: 0;
+            display: flex;
+            align-items: center;
+            
+
+            .left{
+                color: white;
+                font-family: "Montserrat", sans-serif;
+                width: 35%;
+           
+                z-index: 99;
+
+                .small-header-only{
+                    display: none;
+                }
+
+                .header-image{
+                    width: 150%;
+                    
+                }
+
+                .header{
+                    display: flex;
+                    flex-direction: column;
+                    display: none;
+                    
+                    position: relative;
+                    h1{
+                        font-family: ClashDisplayBold;
+                        font-size: 58px;
+                        
+
+                    }
+
+                    img{
+                        width: 50px;
+                        height: auto;
+                        position: absolute;
+                    }
+                    .creativeimg{
+                        top: -60px;
+                        right: 40px;
+                        width: 60px;
+                    }
+                    .boomimg{
+                        top: 50px;
+                        right: -120px;
+                        width: 86px;
+                        height: auto;
+                    }
+                    .chainimg{
+                        top: 50px;
+                        right: -40px;
+                        width: 86px;
+                        height: auto;
+                    }
+
+                }
+
+                p{
+                    font-family: "Montserrat", sans-serif;
+                }
+
+                button{
+                    width: 172px;
+                    height: 53px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: none;
+                    cursor: pointer;
+                    border-radius: 4px;
+                    margin-bottom: 77px;
+                    margin-top: 41px;
+                    color: white;
+                    background: linear-gradient(to right,var(--lailacPurple), var(--lightPurple));
+                }
+                .countdown{
+                    display: flex;
+                    gap: 20px;
+                    
+                    .time{
+                        font-family: 'Unica One', cursive;
+
+                        .value{
+                            font-size: 50px;
+                            font-family: 'Unica One', cursive;
+
+                        }
+                       
+
+                        .unit{
+                            font-size:10px ;
+                        }
+                    }
+                }
+            }
+
+            .right{
+                width: 70%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .hero-img{
+                    width: 100%;
+                    height: auto;
+                }
+
+                .header{
+                    text-align: center;
+                    color: white;
+                    font-family: "Montserrat", sans-serif;
+                    font-style: italic;
+                    font-weight: 700;
+                    
+                    position: relative;
+
+
+                    h3{
+                        font-size:clamp(15px, 2vw, 30px);
+                        text-wrap: nowrap;
+                    }
+                    
+                    width: fit-content;
+                    .stroke-img{
+                        position: absolute;
+                        right: 0;
+                        bottom: -20px;
+                    }
+                }
+
+            }
+
+        }
+    }
   }
 
-  @media (min-width: 769px) and (max-width: 1150px) {}
+  @media (min-width: 769px) and (max-width: 1150px) {
+    .home-page{
 
-  @media screen and (max-width: 768px) {}
+        .navdiv{
+            padding: 30px 50px;
+        }
+        main{
+
+            .hero{
+                padding: 30px 50px;
+                padding-right: 0;
+                padding-bottom: 0;
+            }
+
+        }
+       
+    }
+}
+
+  @media screen and (max-width: 768px) {
+    .home-page{
+        .navdiv{
+                padding: 30px 45px ;
+            }
+        main{
+
+            
+            .hero{
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 30px 0;
+                padding-bottom: 0;
+                row-gap: 30px;
+
+                .left{
+                    // align-items: center;
+                    width: inherit;
+                    display: flex;
+                    flex-direction: column;
+                    padding: 30px 45px;
+
+                    .small-header-wrapper{
+                        width: fit-content;
+                        
+
+
+                        .small-header-only{
+                            display: block;
+                            position: relative;
+                            
+                        
+                                h3{
+                                    width: 100%;
+                                    font-size: clamp(10px, 4vw, 40px);
+                                    text-wrap: nowrap;
+                                }
+                                .stroke-img{
+                                    width: 40%;
+                                    bottom: -10px;
+                                    position: absolute;
+                                    right: 0px;
+                                
+                            }
+                        }
+                   }
+
+                   .header-image{
+                    width: 100%;
+                    margin-top: 40px;
+                   }
+                   p{
+                    text-align: center;
+                   }
+
+                    button{
+                        margin-bottom: 37px;
+                        margin-top: 21px;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                    .countdown{
+                        justify-content: center;
+                    }
+                }
+                .right{
+                    width: inherit;
+
+                    .header{
+                       display: none;
+                    }
+                    
+                }
+            }
+          
+        }
+    }
+  }

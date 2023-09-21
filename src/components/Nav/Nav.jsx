@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import "./Nav.css";
 
@@ -7,12 +7,39 @@ const Nav = () => {
   const location = useLocation().pathname;
   const navigate = useNavigate();
 
+  const [isScreen768px, setIsScreen768px] = useState(false);
+
+ 
+  const handleScreenWidthChange = () => {
+    if (window.innerWidth >= 769) {
+     
+      setIsScreen768px(true);
+    } else {
+      
+      setIsScreen768px(false);
+    }
+  };
+
+ 
+  useEffect(() => {
+    
+    handleScreenWidthChange();
+
+   
+    window.addEventListener("resize", handleScreenWidthChange);
+
+  
+    return () => {
+      window.removeEventListener("resize", handleScreenWidthChange);
+    };
+  }, []);
+
   const navToggleFunction = () => {
     setNavToggle(!navToggle);
   };
   return (
     <nav>
-      <div className="nav">
+      <div className="nav" style={{rowGap: !isScreen768px && !navToggle && 0}}>
         <div className="large-screen-left">
           <img
             style={{ cursor: "pointer" }}
@@ -68,9 +95,11 @@ const Nav = () => {
         <div
           className={`right ${location === "/contact" && "no-small-display"} ${
             location === "/register" && "no-small-display"
-          }`}
+          } `}
+
+      
         >
-          <ul>
+          <ul style={{display: !isScreen768px && !navToggle && "none"}}>
             <li>
               <Link to="">Timeline</Link>
             </li>
@@ -90,7 +119,7 @@ const Nav = () => {
             </li>
           </ul>
 
-          <Link to="/register">
+          <Link to="/register" style={{display: !isScreen768px && !navToggle && "none"}}>
             <button
               className={`${
                 location === "/register" ? "register-button-border" : ""
@@ -100,6 +129,8 @@ const Nav = () => {
             </button>
           </Link>
         </div>
+
+        
       </div>
     </nav>
   );

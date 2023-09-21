@@ -23,6 +23,9 @@
        column-gap: 122px;
   align-items: center;
 }
+.nav .right .homepagenav {
+  display: block;
+}
 .nav .right ul {
   display: flex;
   -moz-column-gap: 58px;

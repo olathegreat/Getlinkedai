@@ -6,6 +6,10 @@
   
   }
 
+
+ 
+
+
   @font-face {
     font-family: 'ClashDisplaySemiBold'; 
     src: url("/public/classDisplayFont/OTF/ClashDisplay-Semibold.otf"); 
@@ -26,6 +30,11 @@
         display: flex;
         column-gap: 122px;
         align-items: center;
+        
+        .homepagenav{
+            display: block;
+        }
+
         ul{
             display: flex;
             column-gap: 58px;
