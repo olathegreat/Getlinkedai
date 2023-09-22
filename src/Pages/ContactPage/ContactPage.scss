@@ -23,13 +23,17 @@
   
   width: 100%;
   height: 982px;
+  overflow-x: hidden;
   padding: 30px 128px;
   position: relative;
 
   .bottomlensflare{
     position: absolute;
-    bottom: -15%;
-    right: -15%;
+    top: 35%;
+    right: -20%;
+    width: 50%;
+    height: auto;
+    
     
     z-index: 1;
 

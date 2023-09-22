@@ -173,10 +173,10 @@ const ContactPage = () => {
       </main>
 
       <img src="/images/lensflarepurple.png" alt="lensflare" className="firstlensflare toplensflare"/>
-      
-      <div className="lenz-flare bottomlensflare">
+      <img src="/images/centrelensflare.png" alt="lensflare" className="bottomlensflare"/>
+      {/* <div className="lenz-flare bottomlensflare">
 
-      </div>
+      </div> */}
       {/* <img src="/images/lensflarepurple.png" alt="lensflare" className="secondlensflare"/> */}
       <img src="/images/lailacstar.png" alt="star" className="lailacstar"/>
       <img src="/images/lightpurplestar.png" alt="lensflare" className="lightpurplestar"/>
