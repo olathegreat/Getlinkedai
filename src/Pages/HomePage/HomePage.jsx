@@ -165,7 +165,7 @@ const HomePage = () => {
 
         <section className="introduction introduction-reverse">
           <div className="left">
-          <img
+            <img
               src="/images/centrelensflare.png"
               alt="star-image"
               className="toplensflare"
@@ -196,7 +196,7 @@ const HomePage = () => {
             </p>
           </div>
           <div className="right">
-          <img
+            <img
               src="/images/centrelensflare.png"
               alt="star-image"
               className="bottomlensflare"
@@ -213,7 +213,7 @@ const HomePage = () => {
 
         <section className="introduction">
           <div className="left">
-          <img
+            <img
               src="/images/centrelensflare.png"
               alt="star-image"
               className="bottomlensflare"
@@ -233,7 +233,7 @@ const HomePage = () => {
               alt="star-image"
               className="judgegreystar-img"
             />
-             <img
+            <img
               src="/images/whitestar.png"
               alt="star-image"
               className="judgewhitestar-img"
@@ -241,7 +241,7 @@ const HomePage = () => {
           </div>
 
           <div className="right">
-          <img
+            <img
               src="/images/centrelensflare.png"
               alt="star-image"
               className="bottomlensflare"
@@ -288,109 +288,254 @@ const HomePage = () => {
               requirements.
             </p>
 
-            <button className="Read-more">
-                Read More
-            </button>
+            <button className="Read-more">Read More</button>
           </div>
         </section>
 
-
         <section className="introduction ">
+          <div className="left">
+            <h2>Frequently Ask</h2>
+            <h4>Question</h4>
 
+            <img
+              src="/images/lightpurplestar.png"
+              alt="star"
+              className="frequentlystar"
+            />
 
-
-            <div className="left">
-                <h2>Frequently Ask</h2>
-                <h4>Question</h4>
-
-                <img src="/images/lightpurplestar.png" alt="star" className="frequentlystar"/>
-
-                <div className="questions">
-
-                    <div className="question-card">
-                        <div>
-                            Can i work on a project i started before the hackathon?
-                        </div>
-
-                        <div className="plus-icon">
-                            +
-
-                        </div>
-
-                    </div>
-
-                    <div className="question-card">
-                        <div>
-                            What happens if i need help during the hackathon?
-                        </div>
-
-                        <div className="plus-icon">
-                            +
-
-                        </div>
-
-                    </div>
-
-                    <div className="question-card">
-                        <div>
-                             What happens if i dont have an idea for a project?
-                        </div>
-
-                        <div className="plus-icon">
-                            +
-
-                        </div>
-
-                    </div>
-
-                    <div className="question-card">
-                        <div>
-                            Can i join a team or do i have to come with one?
-                        </div>
-
-                        <div className="plus-icon">
-                            +
-
-                        </div>
-
-                    </div>
-
-                    <div className="question-card">
-                        <div>
-                            What happens after the hackathon end?
-                        </div>
-
-                        <div className="plus icon">
-                            +
-
-                        </div>
-
-                    </div>
-
-                    <div className="question-card">
-                        <div>
-                             Can i work on a project i satrted before the hackathon?
-                        </div>
-
-                        <div className="plus icon">
-                            +
-
-                        </div>
-
-                    </div>
-
+            <div className="questions">
+              <div className="question-card">
+                <div>
+                  Can i work on a project i started before the hackathon?
                 </div>
 
+                <div className="plus-icon">+</div>
+              </div>
+
+              <div className="question-card">
+                <div>What happens if i need help during the hackathon?</div>
+
+                <div className="plus-icon">+</div>
+              </div>
+
+              <div className="question-card">
+                <div>What happens if i dont have an idea for a project?</div>
+
+                <div className="plus-icon">+</div>
+              </div>
+
+              <div className="question-card">
+                <div>Can i join a team or do i have to come with one?</div>
+
+                <div className="plus-icon">+</div>
+              </div>
+
+              <div className="question-card">
+                <div>What happens after the hackathon end?</div>
+
+                <div className="plus icon">+</div>
+              </div>
+
+              <div className="question-card">
+                <div>
+                  Can i work on a project i satrted before the hackathon?
+                </div>
+
+                <div className="plus icon">+</div>
+              </div>
+            </div>
+          </div>
+
+          <div className="right">
+            <img
+              className="character-img"
+              alt="character-img"
+              src="/images/think.png"
+            />
+          </div>
+        </section>
+
+        {/* another section */}
+
+        <section className="introduction prizes-section">
+          <img
+            src="/images/centrelensflare.png"
+            className="cuplensflare"
+            alt="lensflare"
+          />
+          <img
+            src="/images/centrelensflare.png"
+            className="lensflaremedal"
+            alt="lensfalre"
+          />
+
+          <div className="left">
+            <div className="cup-header">
+              <h2>Prizes and</h2>
+              <h4>Rewards</h4>
+
+              <p>
+                Highlight of the prizes or rewards for winners and<br></br>for
+                participant
+              </p>
+              <img
+                src="/images/lailacstar.png"
+                className="cuplailacstar"
+                alt="star"
+              />
             </div>
 
-            <div className="right">
+            <img src="/images/cup.png" className="character-img" alt="cup" />
 
-                <img className="character-img" alt="character-img" src="/images/think.png"/>
+            {/* <img src="/images/cup.png" className="character-img" alt="cup"/> */}
 
+            <img
+              src="/images/lailacstar.png"
+              className="cuplailacstar"
+              alt="star"
+            />
+            <img
+              src="/images/whitestar.png"
+              className="cupwhitestar"
+              alt="star"
+            />
+          </div>
+
+          <div className="right">
+            <div className="cup-header">
+              <h2>Prizes and</h2>
+              <h4>Rewards</h4>
+
+              <p>
+                Highlight of the prizes or rewards for winners and<br></br>for
+                participant
+              </p>
+              <img
+                src="/images/lailacstar.png"
+                className="cuplailacstar"
+                alt="star"
+              />
             </div>
 
+            <div className="medal-collection">
+              <img
+                src="/images/prizes.png"
+                className="prizesimg"
+                alt="whitestarmedalfirst"
+              />
 
+              <img
+                src="/images/whitestar.png"
+                className="whitestarmedalfirst"
+                alt="whitestarmedalfirst"
+              />
+              <img
+                src="/images/whitestar.png"
+                className="whitestarmedalsecond"
+                alt="whitestarmedalfirst"
+              />
+              <img
+                src="/images/greystar.png"
+                className="greystarmedalfirst"
+                alt="whitestarmedalfirst"
+              />
+            </div>
+          </div>
+        </section>
 
+        {/* partners section */}
+
+        <section className=" introduction partners">
+          <img
+            src="/images/centrelensflare.png"
+            className="cuplensflare"
+            alt="lensflare"
+          />
+          <img
+            src="/images/centrelensflare.png"
+            className="lensflaremedal"
+            alt="lensfalre"
+          />
+
+          <h2>Partners and Sponsors</h2>
+          <p>
+            Getlinked Hackathon 1.0 is honored to have the following major{" "}
+            <br></br>
+            companies as its partners and sponsors
+          </p>
+
+          <div className="sponsors-wrapper">
+            <img
+              src="/images/sponsorslist.png"
+              className="sponsors"
+              alt="sponsor"
+            />
+          </div>
+        </section>
+
+        <section className="introduction privacy">
+          <div className="left">
+            <h2>Privacy Policy and</h2>
+            <h4>Terms</h4>
+
+            <p>Last updated on September 12, 2023</p>
+            <p>
+              Below are our privacy & policy, which outline a lot of goodies.{" "}
+              <br></br>
+              it’s our aim to always take of our participant
+            </p>
+
+            <div className="details-wrapper">
+              <p>
+                At getlinked tech Hackathon 1.0, we value your privacy and are
+                committed to protecting your personal information. This Privacy
+                Policy outlines how we collect, use, disclose, and safeguard
+                your data when you participate in our tech hackathon event. By
+                participating in our event, you consent to the practices
+                described in this policy.
+              </p>
+
+              <p className="lailac header">Licensing Policy</p>
+
+              <p>Here are terms of our Standard License:</p>
+
+              <div className="listing">
+                <img
+                  src="/images/greentick.png"
+                  alt="greentick"
+                  className="greentick"
+                />
+
+                <p>
+                  The Standard License grants you a non-exclusive right to
+                  navigate and register for our event
+                </p>
+              </div>
+
+              <div className="listing">
+                <img
+                  src="/images/greentick.png"
+                  alt="greentick"
+                  className="greentick"
+                />
+
+                <p>
+                  You are licensed to use the item available at any free source
+                  sites, for your project developement
+                </p>
+              </div>
+
+              <button>Read More</button>
+            </div>
+          </div>
+
+          <div className="right">
+            <img
+              src="/images/privacyimg.png"
+              alt="privacyimg"
+              className="privacyimg"
+            />
+          </div>
         </section>
       </main>
     </div>

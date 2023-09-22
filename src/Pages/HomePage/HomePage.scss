@@ -244,7 +244,7 @@
             align-items: center;
             justify-content: center;
             font-family: "Montserrat", sans-serif;
-            padding: 62px 128px;
+            padding: 100px 128px;
             gap: 100px;
             border-bottom: 1px solid grey;
 
@@ -405,6 +405,186 @@
             }
         }
 
+        .prizes-section{
+            position: relative;
+            background: #0b061a;
+            padding-top: 100px;
+            
+            .cuplensflare, .lensflaremedal{
+                position: absolute;
+                width: 60%;
+                height: auto;
+                opacity: .6;
+                
+            }
+            .cuplensflare{
+                left: 5%;
+            }
+            .lensflaremedal{
+                right: -30%;
+                top: 30%;
+            }
+
+            .left{
+                position: relative;
+                flex: 1;
+
+
+
+                .cup-header{
+                    display: none;
+                }
+
+                .cuplailacstar, .cupwhitestar{
+                    position: absolute;
+                    left: 60%;
+                    z-index: -1;
+                }
+                .cupwhitestar{
+                    bottom: -10%;
+                }
+            }
+
+            .right{
+                flex: 1;
+
+                .cup-header{
+                    position: relative;
+
+                    p{
+                        margin-top: 0;
+                        margin-bottom: 50px;
+                    }
+
+                    .cuplailacstar{
+                        position: absolute;
+                        top: 60%;
+                        right: 40%;
+                        z-index: -1;
+                    }
+                }
+                
+
+                .medal-collection{
+                    width: 100%;
+                    position: relative;
+
+                    .prizesimg{
+                        width: 100%;
+                    }
+                }
+               
+
+                .whitestarmedalfirst, .whitestarmedalsecond, .greystarmedalfirst{
+                    position: absolute;
+                }
+
+                .whitestarmedalfirst{
+                    top: -1%;
+                    left: 10%;
+                }
+                .whitestarmedalsecond{
+                    right: -1%;
+                    top: 60%;
+                }
+                .greystarmedalfirst{
+                    bottom: -10%;
+                    right: 30%;
+                }
+            }
+        }
+
+        .partners{
+            flex-direction: column;
+            align-items: center;
+            padding-top: 100px;
+            padding-bottom: 100px;
+            position: relative;
+
+            .cuplensflare, .lensflaremedal{
+                position: absolute;
+                z-index: -1;
+                width: 80%;
+                height: auto;
+            }
+            .cuplensflare{
+                top: -30%;
+                left: -10%;
+            }
+            .lensflaremedal{
+                top: 20%;
+                left: 60%;
+            }
+            gap: 10px;
+            p{
+                text-align: center;
+            }
+
+            .sponsors-wrapper{
+                display: flex;
+                justify-content: center;
+                margin-top: 50px;
+                 img{
+                    width: 80%;
+                    
+                 }
+            }
+        }
+
+
+        .privacy{
+            .left{
+
+                .details-wrapper{
+                    border: 1px solid #d434fe;
+                    border-radius:8px ;
+                    background-color: #ffffff07;
+                    padding: 59px 72px;
+                    margin-top: 50px;
+
+                    .listing{
+                        display: flex;
+                        align-items: flex-start;
+                        margin-top: 10px;
+                        p{
+                            margin-top: 0;
+                            line-height: 25px;
+                        }
+                        img{
+                            width: 17px;
+                            height: 17px;
+                            margin-top: 5px;
+                            margin-right: 10px;
+                        }
+                    }
+                    button{
+                        width: 172px;
+                        height: 53px;
+                        cursor: pointer;
+                        border-radius: 4px;
+                        border: none;
+                        color: white;
+                        margin-top: 15px;
+                        margin-left: auto;
+                        margin-right: auto;
+                        background: linear-gradient(
+                          to right,
+                          var(--lailacPurple),
+                          var(--lightPurple)
+                        );
+
+                    }
+                }
+
+            }
+            .right{
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+
        
     }
   }
@@ -438,8 +618,17 @@
                 }
             }
             .introduction{
-                padding: 30px 50px;
+                padding: 100px 50px;
 
+            }
+            .partners{
+                padding-top: 100px;
+                padding-bottom: 100px;
+            }
+
+            .prizes-section{
+                padding-top: 100px;
+                padding-bottom: 100px;
             }
 
         }
@@ -586,6 +775,39 @@
             }
             .introduction-reverse{
                 flex-direction: column-reverse;
+            }
+            .prizes-section{
+
+                .cuplensflare, .lensflaremedal{
+                    width: 80%;
+                    height: auto;
+                }
+                .cuplensflare{
+                    top:-5%;
+                    left: -20%;
+                }
+                .lensflaremedal{
+                    top: 70%;
+                    width: 100%;
+                    left: 60%;
+                }
+
+                .left{
+                    .cup-header{
+                        display: flex;
+                        flex-direction: column;
+                    }
+                }
+
+                .right{
+                    margin-top: 70px;
+                    .cup-header{
+                        display: none;
+                    }
+                }
+            }
+            .partners{
+                gap: 0;
             }
           
         }
