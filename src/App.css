@@ -116,6 +116,25 @@ li{
 
 }
 
+.register-button-border{
+          width: 172px;
+            height: 53px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: transparent;
+            color: white;
+            border-radius: 14px;
+  border-width: 3px; 
+  border-image: linear-gradient(to top, var(--lailacPurple),var(--lightPurple)) !important; /* Gradient border colors */
+  border-image-slice: 1 !important; 
+
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s, border-image 0.3s;
+  
+}
+
 @media screen and (max-width: 768px) {
   .secondlensflare{
     display: none;

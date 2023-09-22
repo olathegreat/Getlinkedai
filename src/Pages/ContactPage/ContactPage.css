@@ -107,6 +107,7 @@
 }
 .contact-page main .right form textarea {
   height: 119px;
+  resize: none;
 }
 .contact-page main .right form .button-wrapper {
   display: flex;

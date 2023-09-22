@@ -13,6 +13,8 @@ const HomePage = () => {
         <Nav />
       </div>
 
+    
+
       <main>
         <section className="hero">
           <div className="left">

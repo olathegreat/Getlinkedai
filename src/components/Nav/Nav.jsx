@@ -122,7 +122,7 @@ const Nav = () => {
           <Link to="/register" style={{display: !isScreen768px && !navToggle && "none"}}>
             <button
               className={`${
-                location === "/register" ? "register-button-border" : ""
+                location === "/register" ? "register-button-border" : "button"
               }`}
             >
               Register

@@ -67,8 +67,8 @@
     // transform: scale(.85);
     // z-index: 999;
     .left{
-        flex: 1;
-        width: 45%;
+        flex: 2;
+       
         img{
             width: 100%;
             height: auto;
@@ -76,8 +76,8 @@
         }
     }
     .right{
-        flex: 1;
-        width: 45%;
+        flex: 3;
+        
        
        
         form{

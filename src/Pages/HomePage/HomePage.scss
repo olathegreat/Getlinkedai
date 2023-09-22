@@ -227,6 +227,7 @@
                     font-weight: 700;
                     
                     position: relative;
+                    width: fit-content;
 
 
                     h3{
@@ -234,11 +235,12 @@
                         text-wrap: nowrap;
                     }
                     
-                    width: fit-content;
+                   
                     .stroke-img{
                         position: absolute;
+                        width: 40%;
                         right: 0;
-                        bottom: -20px;
+                        bottom: -10px;
                     }
                 }
 
@@ -401,7 +403,7 @@
                 p{
                     line-height: 30px;
                     margin-top:16px ;
-                    letter-spacing: 1px;
+                    // letter-spacing: 1px;
                 }
                 button {
                     width: 172px;

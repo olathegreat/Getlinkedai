@@ -178,8 +178,9 @@
 }
 .home-page main .hero .right .header .stroke-img {
   position: absolute;
+  width: 40%;
   right: 0;
-  bottom: -20px;
+  bottom: -10px;
 }
 .home-page main .introduction {
   color: white;
@@ -302,7 +303,6 @@
 .home-page main .introduction .right p {
   line-height: 30px;
   margin-top: 16px;
-  letter-spacing: 1px;
 }
 .home-page main .introduction .right button {
   width: 172px;
