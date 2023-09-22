@@ -323,10 +323,43 @@
   z-index: -1;
 }
 .home-page main .timeline {
-  padding: 100px 128px;
+  padding: 72px 128px;
   display: flex;
   flex-direction: column;
   gap: 10px;
+  position: relative;
+}
+.home-page main .timeline .lailacstar, .home-page main .timeline .greystar, .home-page main .timeline .whitestar {
+  position: absolute;
+  z-index: -1;
+}
+.home-page main .timeline .lailacstar {
+  left: 30%;
+  top: 15%;
+}
+.home-page main .timeline .greystar {
+  left: 10%;
+  top: 80%;
+}
+.home-page main .timeline .whitestar {
+  left: 80%;
+  top: 50%;
+}
+.home-page main .timeline .header {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 80px;
+}
+.home-page main .timeline .header h2 {
+  font-family: ClashDisplayBold;
+  font-size: 40px;
+}
+.home-page main .timeline .header p {
+  width: 50%;
+  text-align: center;
 }
 .home-page main .timeline .timeline-row {
   display: flex;
@@ -790,7 +823,17 @@
     flex-direction: column-reverse;
   }
   .home-page main .timeline {
+    gap: 30px;
     padding: 60px 45px;
+  }
+  .home-page main .timeline .header {
+    margin-bottom: 30px;
+  }
+  .home-page main .timeline .header p {
+    width: 100%;
+  }
+  .home-page main .timeline .timeline-row {
+    gap: 20px;
   }
   .home-page main .timeline .timeline-row .large-screen-only {
     display: none;
@@ -798,11 +841,22 @@
   .home-page main .timeline .timeline-row h3 {
     font-size: clamp(15px, 4vw, 25px);
   }
+  .home-page main .timeline .timeline-row P {
+    font-size: 14px;
+    line-height: 20px;
+  }
   .home-page main .timeline .timeline-row .mobile-only {
     display: block;
   }
   .home-page main .timeline .timeline-row .right {
-    padding-bottom: 15px;
+    padding-bottom: 5px;
+  }
+  .home-page main .timeline .timeline-row .center .circle {
+    width: 30px;
+    height: 30px;
+  }
+  .home-page main .timeline .timeline-row .center .stroke {
+    height: 100px;
   }
   .home-page main .prizes-section .cuplensflare, .home-page main .prizes-section .lensflaremedal {
     width: 80%;
@@ -842,8 +896,14 @@
   .home-page main .privacy .left .details-wrapper {
     padding: 30px;
   }
+  .home-page main .footer {
+    gap: 20px;
+  }
   .home-page main .footer .left p {
     text-align: left;
+  }
+  .home-page main .footer .left .termsofuse {
+    margin-top: 30px;
   }
   .home-page main .footer .right p {
     text-align: left;

@@ -341,6 +341,19 @@ const HomePage = () => {
         {/* another section */}
 
         <section className="timeline">
+
+          <img src="/images/lailacstar.png" alt="star" className="lailacstar" />
+          <img src="/images/greystar.png" alt="star" className="greystar" />
+          <img src="/images/whitestar.png" alt="star" className="whitestar" />
+
+          <div className="header">
+            <h2>Timeline</h2>
+            <p>Here is the breakdown of the time we anticipate 
+using for the upcoming event.</p>
+
+          </div>
+
+
           <div className="timeline-row">
             <div className="left large-screen-only">
               <h3>Hackathon Announcement</h3>

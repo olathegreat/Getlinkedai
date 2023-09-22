@@ -436,10 +436,49 @@
 
 
          .timeline{
-            padding: 100px 128px;
+            padding: 72px 128px;
             display: flex;
             flex-direction: column;
             gap: 10px;
+            position: relative;
+
+            .lailacstar, .greystar, .whitestar{
+                position: absolute;
+                z-index: -1;
+            }
+
+            .lailacstar{
+                left: 30%;
+                top: 15%;
+            }
+            .greystar{
+                left: 10%;
+                top: 80%;
+            }
+            .whitestar{
+                left: 80%;
+                top: 50%;
+            }
+
+            .header{
+                display:flex;
+                flex-direction: column;
+                color: white;
+                align-items: center;
+                gap: 10px;
+                margin-bottom: 80px;
+
+
+                h2{
+                    font-family: ClashDisplayBold;
+                    font-size: 40px;
+                }
+                p{
+                    width: 50%;
+                    text-align: center;
+                }
+
+            }
 
             .timeline-row{
                 display: flex;
@@ -1102,8 +1141,17 @@
 
 
             .timeline{
+                gap: 30px;
                 padding: 60px 45px;
+                .header{
+                    margin-bottom: 30px;
+                    p{
+                        width: 100%;
+
+                    }
+                }
                 .timeline-row{
+                    gap: 20px;
                     .large-screen-only{
                         display: none;
                     }
@@ -1111,11 +1159,26 @@
                         font-size: clamp(15px, 4vw, 25px);
                     }
 
+                    P{
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
+
                     .mobile-only{
                         display: block;
                     }
                     .right{
-                        padding-bottom: 15px;
+                        padding-bottom: 5px;
+                    }
+
+                    .center{
+                        .circle{
+                            width: 30px;
+                            height: 30px;
+                        }
+                        .stroke{
+                            height: 100px;
+                        }
                     }
 
                 }
@@ -1185,9 +1248,13 @@
 
 
             .footer{
+                gap:20px;
                 .left{
                     p{
                         text-align: left;
+                    }
+                    .termsofuse{
+                        margin-top: 30px;
                     }
 
                 }
