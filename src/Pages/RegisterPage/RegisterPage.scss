@@ -20,12 +20,27 @@
   }
 
   .register-page{
-    background-color: var(--mainPurple);
+   
   width: 100%;
   min-height: 982px;
   padding: 30px 128px;
   position: relative;
   overflow-x: hidden;
+
+  .toplensflare{
+    position: absolute;
+    top: 10%;
+    left: -10%;
+    z-index: -1;
+  }
+  .bottomlensflare{
+    position: absolute;
+    bottom: -20%;
+    right: -10%;
+    
+    z-index: -1;
+
+  }
   
   .registerlailacstar{
     z-index: -1;
@@ -67,6 +82,7 @@
        
         form{
             width: 100%;
+            z-index: 2;
             
             padding: 50px 60px;
             border-radius: 12px;
@@ -127,10 +143,22 @@
                         }
                     }
                     select{
-                        padding-right: 26px;
-                        ::placeholder{
-                            color: rgba(255, 255, 255, .25);
-                        }
+                        padding-right: 30px;
+                        position: relative;
+                        color: grey;
+                       
+                        
+                        ::after {
+                            content: "\25BC"; 
+                            position: absolute;
+                            top: 50%;
+                            right: 10px;
+                            transform: translateY(-50%);
+                            color: white; 
+                            pointer-events: none; 
+                          }
+
+
                     }
 
                 
@@ -175,6 +203,20 @@
   @media (min-width: 769px) and (max-width: 1150px) {
     .register-page{
         padding: 30px 50px;
+
+        .toplensflare{
+            position: absolute;
+            top: 10%;
+            left: -25%;
+          }
+          .bottomlensflare{
+            position: absolute;
+            bottom: -30%;
+            right: -20%;
+            
+            z-index: 1;
+        
+          }
         main{
             gap: 60px;
             .left{
@@ -206,6 +248,22 @@
 
     .register-page{
         padding: 30px 45px;
+
+        .toplensflare{
+            top: 20%;
+            left: -30%;
+            transform: scale(.8);
+        }
+
+        .bottomlensflare{
+            display: none;
+            position: absolute;
+            bottom: -30%;
+            right: -20%;
+            
+            z-index: 1;
+        
+          }
 
         .modal{
             padding-left:36px;

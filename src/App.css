@@ -49,6 +49,33 @@ li{
   position: absolute;
 }
 
+.lenz-flare {
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, #d634fe3e 10%,#d634fe33 20%, #d634fe27 30%, transparent 70%);
+  position: relative;
+  opacity: .6;
+  overflow: hidden;
+}
+
+/* .lens-flare::before,
+.lens-flare::after {
+  content: "";
+  position: absolute;
+  background: radial-gradient(circle, transparent 10%, rgba(255, 255, 255, 0.3) 70%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  top: -20px;
+  left: -20px;
+} */
+
+/* .lens-flare::after {
+  top: 50px;
+  left: 50px;
+} */
+
+
 .firstlensflare{
   top: 0;
   left: 0;

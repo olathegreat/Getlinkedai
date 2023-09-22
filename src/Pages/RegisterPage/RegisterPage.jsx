@@ -1,48 +1,67 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Nav from "../../components/Nav/Nav";
 import "./RegisterPage.css";
 import SuccessModal from "../../components/SuccessModal/SuccessModal";
 import axios from "../../api/axios";
 
-
-const url = "/hackathon/registration"
+const url = "/hackathon/registration";
+const categoryurl = "/hackathon/categories-list";
 const RegisterPage = () => {
   const [teamInfo, setTeamInfo] = useState({});
-  const [modalToggle, setModalToggle] = useState(true);
+  const [category, setCategory] = useState([]);
+  const [modalToggle, setModalToggle] = useState(false);
 
-  const formSubmit = async (e) =>{
+  useEffect(() => {
+    const getCategory = async () => {
+      try {
+        const response = await axios.get(categoryurl, {
+          Headers: {
+            "Content-Type": "application/json",
+          },
+        });
+        console.log(response);
+
+        setCategory(response.data);
+      } catch (err) {
+        console.log(err);
+      }
+    };
+    getCategory();
+  }, []);
+
+  const formSubmit = async (e) => {
     e.preventDefault();
     console.log(teamInfo);
 
-
-    if(  teamInfo.team_name &&
-        teamInfo.email &&
-        teamInfo.phone_number &&
-        teamInfo.project_topic &&
-        teamInfo.category){
-
-    
-
-
-    try{
-
-        const response = await axios.post(url, teamInfo,{
-            Headers:{
-                "Content-Type" : "application/json"
-            }
-        })
+    if (
+      teamInfo.team_name &&
+      teamInfo.email &&
+      teamInfo.phone_number &&
+      teamInfo.project_topic &&
+      teamInfo.category
+    ) {
+      try {
+        const response = await axios.post(url, teamInfo, {
+          Headers: {
+            "Content-Type": "application/json",
+          },
+        });
         console.log(response);
         setTeamInfo({});
         setModalToggle(true);
-       
-
-    }catch(err){
+      } catch (err) {
         console.log(err);
+      }
     }
-}
-  }
+  };
   return (
-    <div className="register-page" style={{ height:modalToggle && "100vh",overflowY: modalToggle && "hidden"}}>
+    <div
+      className="register-page"
+      style={{
+        height: modalToggle && "100vh",
+        overflowY: modalToggle && "hidden",
+      }}
+    >
       <Nav />
 
       <main>
@@ -125,17 +144,22 @@ const RegisterPage = () => {
               <div className="form-group">
                 <label>Category</label>
                 <select
-                
                   onChange={(e) =>
                     setTeamInfo({ ...teamInfo, category: e.target.value })
                   }
                   value={teamInfo.category}
                 >
                   <option>Select Your Category</option>
-                  <option>1</option>
+                  {category.map((item) => (
+                    <option key={item.id} value={item.name}>
+                      {item.name}
+                    </option>
+                  ))}
+
+                  {/* <option>1</option>
                   <option>2</option>
                   <option>3</option>
-                  <option>4</option>
+                  <option>4</option> */}
                 </select>
               </div>
 
@@ -183,9 +207,14 @@ const RegisterPage = () => {
         <SuccessModal changeToggle={() => setModalToggle(false)} />
       </div>
 
-       <img src="/images/lensflarepurple.png" alt="lensflare" className="firstlensflare"/>
-      <img src="/images/lensflarepurple.png" alt="lensflare" className="secondlensflare"/> 
-      <img src="/images/lailacstar.png" alt="star" className=" registerlailacstar lailacstar" />
+      <div className="lenz-flare toplensflare"></div>
+
+      <div className="lenz-flare bottomlensflare"></div>
+      <img
+        src="/images/lailacstar.png"
+        alt="star"
+        className=" registerlailacstar lailacstar"
+      />
       <img
         src="/images/lightpurplestar.png"
         alt="lensflare"
