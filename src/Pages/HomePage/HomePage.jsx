@@ -48,23 +48,6 @@ const HomePage = () => {
               alt="header-img"
               className="header-image"
             />
-            {/* <div className="header">
-              <h1>getlinked Tech</h1>
-              <h1>
-                Hackathon <span className="lightpurple">1.0</span>
-              </h1>
-              <img
-                src="/images/creative.png"
-                alt="hero-img"
-                className="creativeimg"
-              />
-              <img src="/images/boom.png" alt="hero-img" className="boomimg" />
-              <img
-                src="/images/chain.png"
-                alt="hero-img"
-                className="chainimg"
-              />
-            </div> */}
 
             <p>
               Participate in getlinked tech Hackathon 2023 stand a chance to win
@@ -357,6 +340,140 @@ const HomePage = () => {
 
         {/* another section */}
 
+        <section className="timeline">
+          <div className="timeline-row">
+            <div className="left large-screen-only">
+              <h3>Hackathon Announcement</h3>
+              <p>
+                The getlinked tech hackathon 1.0 is formally announced to the
+                general public and teams begin to get ready to register
+              </p>
+            </div>
+
+            <div className="center">
+              <div className="stroke"></div>
+              <div className="circle">1</div>
+            </div>
+
+            <div className="right">
+              <h3 className="mobile-only">Hackathon Announcement</h3>
+              <p className="mobile-only">
+                The getlinked tech hackathon 1.0 is formally announced to the
+                general public and teams begin to get ready to register
+              </p>
+              <h3>November 18, 2023</h3>
+            </div>
+          </div>
+
+          <div className="timeline-row">
+            <div className="left large-screen-only">
+              <h3>November 18, 2023</h3>
+            </div>
+
+            <div className="center">
+              <div className="stroke"></div>
+              <div className="circle">2</div>
+            </div>
+
+            <div className="right">
+              <h3>Hackathon Announcement</h3>
+              <p>
+                The getlinked tech hackathon 1.0 is formally announced to the
+                general public and teams begin to get ready to register
+              </p>
+              <h3 className="mobile-only">November 18, 2023</h3>
+            </div>
+          </div>
+
+          <div className="timeline-row">
+            <div className="left large-screen-only">
+              <h3>Teams Registration ends</h3>
+
+              <p>Interested Participants are no longer Allowed to register</p>
+            </div>
+
+            <div className="center">
+              <div className="stroke"></div>
+              <div className="circle">3</div>
+            </div>
+
+            <div className="right">
+              <h3 className="mobile-only">Teams Registration ends</h3>
+              <p className="mobile-only">
+                Interested Participants are no longer Allowed to register
+              </p>
+              <h3 className="">November 18, 2023</h3>
+            </div>
+          </div>
+
+          <div className="timeline-row">
+            <div className="left large-screen-only">
+              <h3>November 18, 2023</h3>
+            </div>
+
+            <div className="center">
+              <div className="stroke"></div>
+              <div className="circle">4</div>
+            </div>
+
+            <div className="right">
+              <h3>Announcement of the accepted teams and ideas</h3>
+              <p>
+                All teams whom idea has been accepted into getlinked tech
+                hackathon 1.0 2023 are formally announced
+              </p>
+              <h3 className="mobile-only">November 18, 2023</h3>
+            </div>
+          </div>
+
+          <div className="timeline-row">
+            <div className="left large-screen-only">
+              <h3>Getlinked Hackathon 1.0 Offically Begins</h3>
+
+              <p>
+                Accepted teams can now proceed to build their ground breaking
+                skill driven solutions
+              </p>
+            </div>
+
+            <div className="center">
+              <div className="stroke"></div>
+              <div className="circle">5</div>
+            </div>
+
+            <div className="right">
+              <h3 className="mobile-only">
+                Getlinked Hackathon 1.0 Offically Begins
+              </h3>
+              <p className="mobile-only">
+                Accepted teams can now proceed to build their ground breaking
+                skill driven solutions
+              </p>
+              <h3 className="">November 18, 2023</h3>
+            </div>
+          </div>
+
+          <div className="timeline-row">
+            <div className="left large-screen-only">
+              <h3>November 18, 2023</h3>
+            </div>
+
+            <div className="center">
+              <div className="stroke"></div>
+              <div className="circle">6</div>
+            </div>
+
+            <div className="right">
+              <h3>Demo Day</h3>
+              <p>
+                Teams get the opportunity to pitch their projects to judges. The
+                winner of the hackathon will also be announced on this day
+              </p>
+              <h3 className="mobile-only">November 18, 2023</h3>
+            </div>
+          </div>
+        </section>
+
         <section className="introduction prizes-section">
           <img
             src="/images/centrelensflare.png"
@@ -474,6 +591,18 @@ const HomePage = () => {
         </section>
 
         <section className="introduction privacy">
+          <img src="/images/greystar.png" alt="star" className="greystar" />
+          <img src="/images/lailacstar.png" alt="star" className="lailacstar" />
+          <img
+            src="/images/lightpurplestar.png"
+            alt="star"
+            className="lightpurplestar"
+          />
+          <img
+            src="/images/centrelensflare.png"
+            alt="star"
+            className="centrelensflare"
+          />
           <div className="left">
             <h2>Privacy Policy and</h2>
             <h4>Terms</h4>
@@ -525,7 +654,9 @@ const HomePage = () => {
                 </p>
               </div>
 
-              <button>Read More</button>
+              <div className="button-wrapper">
+                <button>Read More</button>
+              </div>
             </div>
           </div>
 
@@ -536,6 +667,117 @@ const HomePage = () => {
               className="privacyimg"
             />
           </div>
+        </section>
+
+        <section className="introduction footer">
+          <div className="left">
+            <img
+              src="/images/lailacstar.png"
+              alt="logo"
+              className="lailacstar"
+            />
+
+            <img
+              src="/images/getlinked.png"
+              alt="logo"
+              className="footer-logo"
+            />
+            <p>
+              Getlinked Tech Hackathon is a technology innovation program
+              established by a group of organizations with the aim of showcasing
+              young and talented individuals in the field of technology
+            </p>
+
+            <div className="termsofuse">
+              <Link to="/"> Terms of Use</Link>
+              <div className="lailacstroke"></div>
+              <Link to="/"> Privacy Policy</Link>
+            </div>
+          </div>
+
+          <div className="right">
+            <img src="/images/greystar.png" alt="logo" className="greystar" />
+            <p className="lailac">Useful Links</p>
+            <p className="links">
+              <Link to="/">Overview</Link>
+            </p>
+            <p className="links">
+              <Link to="/">Timeline</Link>
+            </p>
+            <p className="links">
+              <Link to="/">FAQs</Link>
+            </p>
+            <p className="links">
+              <Link to="/">Register</Link>
+            </p>
+
+            <div className="follow">
+              <p className="lailac">Follow us</p>
+              <div className="logos">
+                <Link>
+                  {" "}
+                  <img
+                    src="/images/instagram.png"
+                    className="logo"
+                    alt="instagram"
+                  />
+                </Link>
+                <Link>
+                  {" "}
+                  <img
+                    src="/images/twitter.png"
+                    className="logo"
+                    alt="instagram"
+                  />
+                </Link>
+                <Link>
+                  {" "}
+                  <img
+                    src="/images/facebook.png"
+                    className="logo"
+                    alt="instagram"
+                  />
+                </Link>
+                <Link>
+                  {" "}
+                  <img
+                    src="/images/linkedin.png"
+                    className="logo"
+                    alt="instagram"
+                  />
+                </Link>
+              </div>
+            </div>
+          </div>
+          <div className="right">
+            <img src="/images/whitestar.png" alt="logo" className="whitestar" />
+            <p className="lailac"> Contact Us</p>
+
+            <p className="links">
+              <Link to="/">
+                <img
+                  src="/images/phone.png"
+                  alt="phone-icon"
+                  className="phone-icon"
+                />
+                <span>+234 6707653444</span>
+              </Link>
+            </p>
+            <p className="links">
+              <Link to="/">
+                <img
+                  src="/images/location.png"
+                  alt="phone-icon"
+                  className="phone-icon"
+                />
+                <span>27,Alara Street Yaba 100012 Lagos State</span>
+              </Link>
+            </p>
+          </div>
+        </section>
+
+        <section className="allright">
+          <p>All rights reserved &copy; getlinked Ltd. </p>
         </section>
       </main>
     </div>

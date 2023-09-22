@@ -322,6 +322,76 @@
   opacity: 0.6;
   z-index: -1;
 }
+.home-page main .timeline {
+  padding: 100px 128px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.home-page main .timeline .timeline-row {
+  display: flex;
+  align-items: flex-end;
+  gap: 30px;
+  color: white;
+}
+.home-page main .timeline .timeline-row p {
+  line-height: 30px;
+}
+.home-page main .timeline .timeline-row .mobile-only {
+  display: none;
+}
+.home-page main .timeline .timeline-row h3 {
+  color: var(--lailacPurple);
+  font-size: 24px;
+}
+.home-page main .timeline .timeline-row .left {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+.home-page main .timeline .timeline-row .left p {
+  text-align: end;
+}
+.home-page main .timeline .timeline-row .left h3 {
+  text-align: end;
+}
+.home-page main .timeline .timeline-row .right {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+.home-page main .timeline .timeline-row .right p {
+  text-align: start;
+}
+.home-page main .timeline .timeline-row .right h3 {
+  text-align: start;
+}
+.home-page main .timeline .timeline-row .center {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+.home-page main .timeline .timeline-row .center .stroke {
+  height: 137px;
+  width: 2px;
+  background: var(--lailacPurple);
+}
+.home-page main .timeline .timeline-row .center .circle {
+  width: 53px;
+  height: 53px;
+  border-radius: 50%;
+  font-size: 24px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, var(--lailacPurple), var(--lightPurple));
+}
 .home-page main .prizes-section {
   position: relative;
   background: #0b061a;
@@ -426,6 +496,30 @@
 .home-page main .partners .sponsors-wrapper img {
   width: 80%;
 }
+.home-page main .privacy {
+  position: relative;
+}
+.home-page main .privacy .greystar, .home-page main .privacy .lailacstar, .home-page main .privacy .lightpurplestar, .home-page main .privacy .centrelensflare {
+  position: absolute;
+  z-index: -1;
+  opacity: 0.6;
+}
+.home-page main .privacy .greystar {
+  top: 5%;
+  left: 20%;
+}
+.home-page main .privacy .lightpurplestar {
+  top: 50%;
+  left: 50%;
+}
+.home-page main .privacy .lailacstar {
+  top: 70%;
+  left: 6%;
+}
+.home-page main .privacy .centrelensflare {
+  left: -20%;
+  top: 50%;
+}
 .home-page main .privacy .left .details-wrapper {
   border: 1px solid #d434fe;
   border-radius: 8px;
@@ -448,7 +542,11 @@
   margin-top: 5px;
   margin-right: 10px;
 }
-.home-page main .privacy .left .details-wrapper button {
+.home-page main .privacy .left .details-wrapper .button-wrapper {
+  display: flex;
+  align-items: center;
+}
+.home-page main .privacy .left .details-wrapper .button-wrapper button {
   width: 172px;
   height: 53px;
   cursor: pointer;
@@ -463,6 +561,90 @@
 .home-page main .privacy .right img {
   width: 100%;
   height: auto;
+}
+.home-page main .footer {
+  background: rgba(11, 6, 26, 0.631372549);
+  align-items: flex-start;
+  border-bottom: none;
+  gap: 60px;
+}
+.home-page main .footer .left {
+  flex: 3;
+  position: relative;
+}
+.home-page main .footer .left .lailacstar {
+  position: absolute;
+  left: 80%;
+  top: 100%;
+}
+.home-page main .footer .left .termsofuse {
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+}
+.home-page main .footer .left .termsofuse .lailacstroke {
+  width: 3px !important;
+  height: 30px;
+  background: var(--lailacPurple);
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.home-page main .footer .left .termsofuse a {
+  color: white;
+}
+.home-page main .footer .right {
+  position: relative;
+}
+.home-page main .footer .right .greystar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+.home-page main .footer .right .whitestar {
+  position: absolute;
+  bottom: 0;
+  top: 100%;
+  width: 18px;
+  height: auto;
+  z-index: -1;
+}
+.home-page main .footer .right a {
+  color: white;
+}
+.home-page main .footer .right .follow {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.home-page main .footer .right .follow p {
+  margin-top: 5px;
+}
+.home-page main .footer .right .follow .lailac {
+  text-wrap: nowrap;
+}
+.home-page main .footer .right .follow .logos {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.home-page main .footer .right .links a {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+.home-page main .footer .right .links a img {
+  width: 12px;
+  height: 12px;
+  margin-top: 10px;
+}
+.home-page main .allright {
+  background: rgba(11, 6, 26, 0.631372549);
+}
+.home-page main .allright p {
+  text-align: center;
+  color: white;
+  padding-bottom: 30px;
 }
 
 @media (min-width: 769px) and (max-width: 1150px) {
@@ -491,6 +673,9 @@
   .home-page main .prizes-section {
     padding-top: 100px;
     padding-bottom: 100px;
+  }
+  .home-page main .privacy .left .details-wrapper {
+    padding: 30px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -604,6 +789,21 @@
   .home-page main .introduction-reverse {
     flex-direction: column-reverse;
   }
+  .home-page main .timeline {
+    padding: 60px 45px;
+  }
+  .home-page main .timeline .timeline-row .large-screen-only {
+    display: none;
+  }
+  .home-page main .timeline .timeline-row h3 {
+    font-size: clamp(15px, 4vw, 25px);
+  }
+  .home-page main .timeline .timeline-row .mobile-only {
+    display: block;
+  }
+  .home-page main .timeline .timeline-row .right {
+    padding-bottom: 15px;
+  }
   .home-page main .prizes-section .cuplensflare, .home-page main .prizes-section .lensflaremedal {
     width: 80%;
     height: auto;
@@ -629,5 +829,26 @@
   }
   .home-page main .partners {
     gap: 0;
+  }
+  .home-page main .privacy {
+    gap: 100px;
+  }
+  .home-page main .privacy .centrelensflare {
+    top: 10%;
+    left: -30%;
+    width: 90%;
+    height: auto;
+  }
+  .home-page main .privacy .left .details-wrapper {
+    padding: 30px;
+  }
+  .home-page main .footer .left p {
+    text-align: left;
+  }
+  .home-page main .footer .right p {
+    text-align: left;
+  }
+  .home-page main .footer .right .follow {
+    flex-wrap: wrap;
   }
 }/*# sourceMappingURL=HomePage.css.map */
