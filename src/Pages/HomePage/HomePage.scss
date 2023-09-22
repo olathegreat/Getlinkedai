@@ -1293,3 +1293,35 @@
         }
     }
   }
+
+  @media screen and (max-width:350px) {
+
+    .home-page{
+        main{
+            .timeline{
+                .timeline-row{
+                   
+                    display: flex;
+                    .right{
+                       
+                        height: 140px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                       h3{
+                        font-size: 9px;
+                       }
+                       p{
+                        font-size: 9px;
+                       }
+                       
+                    }
+
+                   
+                   
+                }
+            }
+        }
+    }
+    
+  }

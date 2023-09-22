@@ -919,4 +919,21 @@
   .home-page main .footer .right .follow {
     flex-wrap: wrap;
   }
+}
+@media screen and (max-width: 350px) {
+  .home-page main .timeline .timeline-row {
+    display: flex;
+  }
+  .home-page main .timeline .timeline-row .right {
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .home-page main .timeline .timeline-row .right h3 {
+    font-size: 9px;
+  }
+  .home-page main .timeline .timeline-row .right p {
+    font-size: 9px;
+  }
 }/*# sourceMappingURL=HomePage.css.map */
