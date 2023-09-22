@@ -6,7 +6,8 @@ import { Link } from "react-router-dom";
 const HomePage = () => {
   return (
     <div className="home-page">
-      <div className="lenz-flare  main-top-lens-flare"></div>
+         <img src="/images/centrelensflare.png" alt="lensflare" className="main-top-lens-flare"/>
+      {/* <div className="lenz-flare  main-top-lens-flare"></div> */}
 
       <div className="navdiv">
         <Nav />
@@ -15,7 +16,7 @@ const HomePage = () => {
       <main>
         <section className="hero">
           <div className="left">
-            {/* <img src="/images/centrelensflare.png" alt="lensflare" className="main-top-lens-flare"/> */}
+         
             <img
               src="/images/whitestar.png"
               alt="hero-img"

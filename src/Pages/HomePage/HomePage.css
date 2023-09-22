@@ -25,9 +25,10 @@
 }
 .home-page .main-top-lens-flare {
   position: absolute;
-  top: -10%;
+  top: -100px;
   left: -5%;
   z-index: -1;
+  width: 70%;
   opacity: 0.6;
 }
 .home-page .lailac {
@@ -712,6 +713,13 @@
   }
 }
 @media screen and (max-width: 768px) {
+  .home-page .main-top-lens-flare {
+    top: 10px;
+    left: -5%;
+    z-index: -1;
+    width: 100%;
+    opacity: 0.6;
+  }
   .home-page .navdiv {
     padding: 30px 45px;
   }

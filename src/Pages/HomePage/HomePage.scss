@@ -29,11 +29,12 @@
 
     .main-top-lens-flare{
         position: absolute;
-        top: -10%;
+        top: -100px;
         // width: 150%;
         // height: auto;
         left: -5%;
         z-index: -1;
+        width: 70%;
         
         opacity: .6;
        
@@ -934,6 +935,9 @@
   @media (min-width: 769px) and (max-width: 1150px) {
     .home-page{
 
+        
+       
+
         .navdiv{
             padding: 30px 50px;
         }
@@ -987,6 +991,20 @@
 
   @media screen and (max-width: 768px) {
     .home-page{
+
+        .main-top-lens-flare{
+           
+            top: 10px;
+
+            left: -5%;
+            z-index: -1;
+            width: 100%;
+            
+            opacity: .6;
+           
+            
+            
+        }
         .navdiv{
                 padding: 30px 45px ;
             }
