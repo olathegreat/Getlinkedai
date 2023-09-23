@@ -42,6 +42,13 @@
                 color: white;
                 a{
                     color: white;
+                    &:hover{
+                        background: linear-gradient(to right, var(--lailacPurple), var(--lightPurple)); 
+                        -webkit-background-clip: text; 
+                        background-clip: text; 
+                        color: transparent; 
+
+                    }
                 }
                 .gradient-text {
                     background: linear-gradient(to right, var(--lailacPurple), var(--lightPurple)); 
