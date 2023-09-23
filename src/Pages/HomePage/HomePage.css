@@ -829,6 +829,10 @@
     left: 0;
     top: -120%;
   }
+  .home-page main .introduction .left .toplensflare {
+    top: -160%;
+    left: -20%;
+  }
   .home-page main .introduction .left .star-img {
     left: 0;
   }
