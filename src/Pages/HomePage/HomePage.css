@@ -825,6 +825,10 @@
   .home-page main .introduction .left {
     width: 100%;
   }
+  .home-page main .introduction .left .greystar-img {
+    left: 0;
+    top: -120%;
+  }
   .home-page main .introduction .left .star-img {
     left: 0;
   }
