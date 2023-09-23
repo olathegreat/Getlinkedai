@@ -112,7 +112,7 @@ const Nav = () => {
             <li>
               <Link
                 to="/contact"
-                className={`${location === "/contact" && "gradient-text"}`}
+                className={`${location === "/contact"  && "gradient-text"} ${location === "/register"  && "gradient-text"}`}
               >
                 Contact
               </Link>
