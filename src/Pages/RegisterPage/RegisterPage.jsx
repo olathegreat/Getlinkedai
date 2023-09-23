@@ -10,6 +10,14 @@ const RegisterPage = () => {
   const [teamInfo, setTeamInfo] = useState({});
   const [category, setCategory] = useState([]);
   const [modalToggle, setModalToggle] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("") 
+
+  const modalButtonFunction = () =>{
+    setModalToggle(false);
+    setTeamInfo({});
+    setCategory([]);
+
+  }
 
   useEffect(() => {
     const getCategory = async () => {
@@ -19,7 +27,7 @@ const RegisterPage = () => {
             "Content-Type": "application/json",
           },
         });
-        console.log(response);
+     
 
         setCategory(response.data);
       } catch (err) {
@@ -31,7 +39,7 @@ const RegisterPage = () => {
 
   const formSubmit = async (e) => {
     e.preventDefault();
-    console.log(teamInfo);
+   
 
     if (
       teamInfo.team_name &&
@@ -46,11 +54,12 @@ const RegisterPage = () => {
             "Content-Type": "application/json",
           },
         });
-        console.log(response);
-        setTeamInfo({});
+       
+        setTeamInfo({...teamInfo, team_name:"", email:"", phone_number:"", project_topic:"", category:"", group_size:""});
         setModalToggle(true);
       } catch (err) {
         console.log(err);
+        setErrorMessage(err.response.data)
       }
     }
   };
@@ -92,6 +101,7 @@ const RegisterPage = () => {
                   value={teamInfo.team_name}
                   type="text"
                   placeholder="Enter the name of your group"
+                  required
                 />
               </div>
 
@@ -105,8 +115,9 @@ const RegisterPage = () => {
                     })
                   }
                   value={teamInfo.phone_number}
-                  type="text"
+                  type="tel"
                   placeholder="Enter your phone number"
+                  required
                 />
               </div>
             </div>
@@ -121,6 +132,7 @@ const RegisterPage = () => {
                   value={teamInfo.email}
                   type="email"
                   placeholder="Enter your email address"
+                  required
                 />
               </div>
 
@@ -136,6 +148,7 @@ const RegisterPage = () => {
                   value={teamInfo.project_topic}
                   type="text"
                   placeholder="What is your group project topic"
+                  required
                 />
               </div>
             </div>
@@ -148,10 +161,11 @@ const RegisterPage = () => {
                     setTeamInfo({ ...teamInfo, category: e.target.value })
                   }
                   value={teamInfo.category}
+                  required
                 >
                   <option>Select Your Category</option>
                   {category.map((item) => (
-                    <option key={item.id} value={item.name}>
+                    <option key={item.id} value={item.id}>
                       {item.name}
                     </option>
                   ))}
@@ -170,6 +184,7 @@ const RegisterPage = () => {
                     setTeamInfo({ ...teamInfo, group_size: e.target.value })
                   }
                   value={teamInfo.group_size}
+                  required
                 >
                   <option>Select</option>
                   <option>2</option>
@@ -198,6 +213,8 @@ const RegisterPage = () => {
               </p>
             </div>
 
+            <p style={{color:"red", fontStyle:"italic"}}>{errorMessage}</p>
+
             <button type="submit"> Register Now</button>
           </form>
         </div>
@@ -213,7 +230,7 @@ const RegisterPage = () => {
       <img
         src="/images/lailacstar.png"
         alt="star"
-        className=" registerlailacstar lailacstar"
+        className=" registerlailacstar"
       />
       <img
         src="/images/lightpurplestar.png"
@@ -225,7 +242,8 @@ const RegisterPage = () => {
         alt="lensflare"
         className="outlinestar"
       />
-      <img src="/images/greystar.png" alt="lensflare" className="greystar" />
+      <img src="/images/whitestar.png" alt="lensflare" className="registergreystar" />
+      <img src="/images/greystar.png" alt="lensflare" className="registergreystar2" />
       <img src="/images/whitestar.png" alt="lensflare" className="whitestar" />
     </div>
   );

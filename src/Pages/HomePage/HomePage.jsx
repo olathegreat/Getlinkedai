@@ -698,6 +698,7 @@ using for the upcoming event.</p>
               alt="logo"
               className="footer-logo"
             />
+            <img src="/images/whitestar.png" alt="whitestar" className="footerwhitestar"/>
             <p>
               Getlinked Tech Hackathon is a technology innovation program
               established by a group of organizations with the aim of showcasing

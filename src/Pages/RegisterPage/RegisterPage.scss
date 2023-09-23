@@ -41,9 +41,18 @@
     z-index: -1;
 
   }
+
+  .registergreystar2{
+    position: absolute;
+    right: 20%;
+    top: 17%;
+  }
   
   .registerlailacstar{
     z-index: -1;
+    top: 20%;
+    left: 7%;
+    position: absolute;
   }
   .modal{
     position: absolute;
@@ -64,8 +73,7 @@
     margin-top: 68px;
     align-items: center;
     gap: 100px;
-    // transform: scale(.85);
-    // z-index: 999;
+   
     .left{
         flex: 2;
        
@@ -136,6 +144,7 @@
                         border: 1px solid white;
                         font-size: 14px;
                         border-radius: 4px;
+                        color: white;
                         background-color: rgba(255, 255, 255, .1);
                         outline: none;
                         ::placeholder{

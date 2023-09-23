@@ -68,11 +68,11 @@
 .home-page main .hero .left .greystar1 {
   position: absolute;
   top: 0;
-  right: -30%;
+  right: -50%;
 }
 .home-page main .hero .left .greystar2 {
   position: absolute;
-  bottom: 0;
+  bottom: 10%;
   right: 3%;
 }
 .home-page main .hero .left .small-header-only {
@@ -212,11 +212,11 @@
 .home-page main .introduction .left .star-img {
   position: absolute;
   left: -30px;
-  top: 50%;
+  top: 40%;
 }
 .home-page main .introduction .left .arrow-img {
   position: absolute;
-  right: 60px;
+  right: -30px;
   bottom: 0;
 }
 .home-page main .introduction .left .character-img {
@@ -238,7 +238,7 @@
 .home-page main .introduction .left .whitestar-img {
   position: absolute;
   right: -5%;
-  bottom: 30%;
+  bottom: 10%;
 }
 .home-page main .introduction .left .bottomlensflare {
   position: absolute;
@@ -256,11 +256,13 @@
   position: absolute;
   top: 50%;
   left: 50%;
+  display: none;
 }
 .home-page main .introduction .left .judgewhitestar-img {
   position: absolute;
   bottom: 0;
   right: 0;
+  display: none;
 }
 .home-page main .introduction .left .questions {
   width: 100%;
@@ -284,7 +286,7 @@
 }
 .home-page main .introduction .left .frequentlystar {
   position: absolute;
-  top: -30px;
+  top: -50px;
   left: -30px;
 }
 .home-page main .introduction .right {
@@ -335,12 +337,12 @@
   z-index: -1;
 }
 .home-page main .timeline .lailacstar {
-  left: 30%;
+  left: 20%;
   top: 15%;
 }
 .home-page main .timeline .greystar {
   left: 10%;
-  top: 80%;
+  top: 90%;
 }
 .home-page main .timeline .whitestar {
   left: 80%;
@@ -454,10 +456,15 @@
 .home-page main .prizes-section .left .cuplailacstar, .home-page main .prizes-section .left .cupwhitestar {
   position: absolute;
   left: 60%;
-  z-index: -1;
+  z-index: 1;
+}
+.home-page main .prizes-section .left .cuplailacstar {
+  left: 30%;
+  top: -20%;
 }
 .home-page main .prizes-section .left .cupwhitestar {
   bottom: -10%;
+  left: 40%;
 }
 .home-page main .prizes-section .right {
   flex: 1;
@@ -539,11 +546,11 @@
   opacity: 0.6;
 }
 .home-page main .privacy .greystar {
-  top: 5%;
-  left: 20%;
+  top: 10%;
+  left: 40%;
 }
 .home-page main .privacy .lightpurplestar {
-  top: 50%;
+  top: 20%;
   left: 50%;
 }
 .home-page main .privacy .lailacstar {
@@ -610,6 +617,13 @@
   position: absolute;
   left: 80%;
   top: 100%;
+}
+.home-page main .footer .left .footerwhitestar {
+  position: absolute;
+  left: -10%;
+  top: 10%;
+  width: 15px;
+  height: auto;
 }
 .home-page main .footer .left .termsofuse {
   margin-top: 80px;
@@ -810,6 +824,15 @@
   }
   .home-page main .introduction .left {
     width: 100%;
+  }
+  .home-page main .introduction .left .star-img {
+    left: 0;
+  }
+  .home-page main .introduction .left .arrow-img {
+    right: 50%;
+    bottom: -20px;
+    width: 30px;
+    height: auto;
   }
   .home-page main .introduction .left p {
     text-align: center;

@@ -30,8 +30,6 @@
     .main-top-lens-flare{
         position: absolute;
         top: -100px;
-        // width: 150%;
-        // height: auto;
         left: -5%;
         z-index: -1;
         width: 70%;
@@ -104,12 +102,12 @@
                 .greystar1{
                     position: absolute;
                     top: 0;
-                    right: -30%;
+                    right: -50%;
 
                 }
                 .greystar2{
                     position: absolute;
-                    bottom: 0;
+                    bottom: 10%;
                     right: 3%;
                 }
                 .small-header-only{
@@ -303,11 +301,11 @@
                 .star-img{
                     position: absolute;
                     left: -30px;
-                    top: 50%;
+                    top: 40%;
                 }
                 .arrow-img{
                     position: absolute;
-                    right: 60px;
+                    right: -30px;
                     bottom: 0;
 
                 }
@@ -331,7 +329,7 @@
                 .whitestar-img{
                     position: absolute;
                     right: -5%;
-                    bottom: 30%;
+                    bottom: 10%;
 
                 }
                 .bottomlensflare{
@@ -350,6 +348,7 @@
                     position: absolute;
                     top: 50%;
                     left: 50%;
+                    display: none;
 
                 }
 
@@ -357,6 +356,7 @@
                     position: absolute;
                     bottom: 0;
                     right: 0;
+                    display: none;
 
                 }
                 .questions{
@@ -382,7 +382,7 @@
                 }
                 .frequentlystar{
                     position: absolute;
-                    top: -30px;
+                    top: -50px;
                     left: -30px;
                 }
 
@@ -452,12 +452,12 @@
             }
 
             .lailacstar{
-                left: 30%;
+                left: 20%;
                 top: 15%;
             }
             .greystar{
                 left: 10%;
-                top: 80%;
+                top: 90%;
             }
             .whitestar{
                 left: 80%;
@@ -610,10 +610,15 @@
                 .cuplailacstar, .cupwhitestar{
                     position: absolute;
                     left: 60%;
-                    z-index: -1;
+                    z-index: 1;
+                }
+                .cuplailacstar{
+                    left: 30%;
+                    top: -20%;
                 }
                 .cupwhitestar{
                     bottom: -10%;
+                    left: 40%;
                 }
             }
 
@@ -748,11 +753,11 @@
                 opacity: .6;
             }
             .greystar{
-                top: 5%;
-                left: 20%;
+                top: 10%;
+                left: 40%;
             }
             .lightpurplestar{
-                top: 50%;
+                top: 20%;
                 left: 50%;
             }
             .lailacstar{
@@ -843,7 +848,13 @@
                     left: 80%;
                     top: 100%;
                 }
-               
+               .footerwhitestar{
+                position: absolute;
+                left: -10%;
+                top: 10%;
+                width: 15px;
+                height: auto;
+               }
 
                 .termsofuse{
                     margin-top: 80px;
@@ -1128,6 +1139,15 @@
                 }
                 .left{
                     width: 100%;
+                     .star-img{
+                        left: 0;
+                     }
+                     .arrow-img{
+                        right: 50%;
+                        bottom: -20px;
+                        width: 30px;
+                        height: auto;
+                     }
                     p{
                         text-align: center;
                     }
